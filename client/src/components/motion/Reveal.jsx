@@ -4,7 +4,7 @@ export default function Reveal({
   children,
   className = "",
   delay = 0,
-  amount = 0.98,
+  amount = 0.35,
   once = false,
   direction = "up",
 }) {
