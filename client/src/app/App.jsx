@@ -7,6 +7,8 @@ import ContentPage from "../pages/ContentPage.jsx";
 import Contact from "../pages/Contact.jsx";
 import LegalPage from "../pages/LegalPage.jsx";
 import NotFound from "../pages/NotFound.jsx";
+import SecurityRestrictions from
+  "../components/SecurityRestrictions.jsx";
 
 const pages = [
   {
@@ -168,6 +170,7 @@ function RouteView() {
 export default function App() {
   return (
     <>
+      <SecurityRestrictions />
       <RouteView />
       <Analytics />
     </>
