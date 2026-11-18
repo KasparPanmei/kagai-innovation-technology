@@ -1,5 +1,6 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+import { Analytics } from "@vercel/analytics/react";
 import MainLayout from "../layouts/MainLayout.jsx";
 import Home from "../pages/Home.jsx";
 import ContentPage from "../pages/ContentPage.jsx";
@@ -165,5 +166,10 @@ function RouteView() {
   );
 }
 export default function App() {
-  return <RouteView />;
+  return (
+    <>
+      <RouteView />
+      <Analytics />
+    </>
+  );
 }
