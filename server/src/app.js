@@ -19,15 +19,36 @@ const app = express();
 // Security middleware
 app.use(helmet());
 
+// Allowed frontend origins
+const allowedOrigins = env.CLIENT_ORIGIN
+  .split(',')
+  .map((origin) => origin.trim().replace(/\/$/, ''))
+  .filter(Boolean);
+
 // CORS configuration
-app.use(
-  cors({
-    origin: env.CLIENT_ORIGIN
-      .split(',')
-      .map((origin) => origin.trim()),
-    credentials: true,
-  })
-);
+const corsOptions = {
+  origin: (origin, callback) => {
+    // Allow requests without an Origin header
+    // (e.g. local server-to-server requests).
+    if (!origin || allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+
+    console.warn(`CORS blocked origin: ${origin}`);
+    return callback(new Error('Not allowed by CORS'));
+  },
+
+  credentials: true,
+
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+
+  allowedHeaders: ['Content-Type', 'Authorization'],
+
+  optionsSuccessStatus: 204,
+};
+
+// Apply CORS before routes and rate limiting
+app.use(cors(corsOptions));
 
 // Request body parsing
 app.use(express.json({ limit: '30kb' }));
