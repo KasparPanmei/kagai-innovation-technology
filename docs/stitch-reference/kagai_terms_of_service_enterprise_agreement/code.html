@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;family=Space+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-tertiary-container":"#b77458","surface-bright":"#f9f9ff","on-error":"#ffffff","on-primary-fixed":"#071747","surface-tint":"#4f5c8f","on-tertiary-fixed":"#370e00","on-secondary-fixed":"#410008","tertiary-fixed":"#ffdbce","background":"#f9f9ff","secondary":"#b71f31","inverse-primary":"#b7c4fe","on-background":"#131c2a","on-tertiary-fixed-variant":"#6e3821","tertiary-container":"#380f00","surface-dim":"#d1daee","on-surface":"#131c2a","surface-variant":"#dae3f7","tertiary":"#050100","pure-white":"#FFFFFF","outline-variant":"#c6c5d0","on-primary":"#ffffff","on-error-container":"#93000a","surface-container-lowest":"#ffffff","secondary-fixed":"#ffdad8","inverse-on-surface":"#ecf1ff","on-secondary-fixed-variant":"#92001e","on-secondary":"#ffffff","on-tertiary":"#ffffff","primary-fixed-dim":"#b7c4fe","surface-container-high":"#dfe8fd","surface-container-low":"#f0f3ff","inverse-surface":"#283140","light-border":"#E1E5EB","primary-container":"#081848","on-primary-container":"#7582b7","surface-container":"#e7eeff","on-surface-variant":"#45464f","error":"#ba1a1a","on-secondary-container":"#5b000f","tertiary-fixed-dim":"#ffb598","steel-grey":"#737D8C","error-container":"#ffdad6","on-primary-fixed-variant":"#374475","primary-fixed":"#dce1ff","soft-grey":"#F3F4F6","surface":"#f9f9ff","outline":"#767680","surface-container-highest":"#dae3f7","primary":"#000109","secondary-fixed-dim":"#ffb3b2","secondary-container":"#fd545e"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-lg":"4rem","margin":"2rem","gutter-lg":"2rem","gutter":"1.5rem","space-2xl":"4rem","margin-sm":"1rem","gutter-sm":"1rem","space-xs":"0.25rem","space-md":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","space-lg":"1.5rem"},"fontFamily":{"display-lg-mobile":["Manrope"],"label-md":["Space Mono"],"body-md":["Inter"],"display-lg":["Manrope"],"body-sm":["Inter"],"headline-sm":["Manrope"],"body-lg":["Inter"],"headline-xl":["Manrope"],"label-sm":["Space Mono"],"headline-lg":["Manrope"],"headline-xl-mobile":["Manrope"],"headline-md":["Manrope"]},"fontSize":{"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-pure-white/95 backdrop-blur-md shadow-[0_1px_8px_rgba(8,24,72,0.06)]"><div class="w-full bg-primary-container text-on-primary px-margin-sm lg:px-margin-lg py-space-xs flex items-center justify-between transition-all duration-300" id="top-announcement-bar"><div class="flex-1 text-center"><p class="font-label-sm text-label-sm tracking-wider uppercase text-on-primary"><span class="inline-block w-2 h-2 rounded-full bg-secondary-container mr-2 align-middle"></span>NEW TECHNICAL COURSES ARE NOW AVAILABLE IN THE KAGAI ACADEMY • EXPLORE OUR ENGINEERING SOLUTIONS</p></div><button aria-label="Close announcement" class="text-on-primary hover:text-secondary-fixed transition-colors flex items-center justify-center p-space-xs" onclick="document.getElementById('top-announcement-bar').style.display='none'"><span class="material-symbols-outlined text-[16px]">close</span></button></div><div class="h-20 w-full px-margin-sm lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Logo3.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDPE_5BZsLKOQ8iztW-2mYiB8R60lEsfjQ2KKGkK5-Fqg_bGumyq1lQw2wEPHhDUOdKHSoZX6RR8-0sCkJmhYCXZEfVvJn5KonzmQ0S2RSPDblIlCJpR-QxJZaxYrcvy2pYOKoDpjFFkVw_7F23f7bTabc6L5UYOsLmZo14FXXiSEPe6agrtOlf5NmnJ3biZnL44ckILAeHmcJVUwIw7XxY4oMAPdrsV0V7Wo75bgDVjxrqg8vuCNperg"/><a class="flex flex-col" data-path="home" href="#"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary-container leading-none">KAGAI</span><span class="font-label-sm text-label-sm tracking-widest text-steel-grey uppercase">Innovation Technology</span></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-secondary font-semibold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="solutions" href="#">Solutions</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="academy" href="#">Academy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="insights" href="#">Insights</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><button aria-label="Search" class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-soft-grey hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><a class="hidden md:inline-flex items-center px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface hover:text-primary-container hover:bg-soft-grey transition-colors" data-path="auth" href="#">Client &amp; Student Portal</a><a class="inline-flex items-center px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm tracking-wide hover:bg-on-secondary-fixed-variant transition-colors shadow-[0_2px_6px_-1px_rgba(8,24,72,0.08)]" data-path="contact" href="#">Let's Discuss Your Project</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Document Identity Banner -->
+<section class="w-full bg-surface-container-low py-space-xl px-margin-sm lg:px-margin-lg">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-md">
+<!-- Breadcrumb & Classification Tag -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-steel-grey uppercase tracking-widest">
+<span class="text-on-surface">Legal Repository</span>
+<span>//</span>
+<span class="text-on-surface">Contractual Governance</span>
+<span>//</span>
+<span class="text-primary-container font-semibold">Ref: KAGAI-MSA-TOS-2025.2</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 bg-surface-container-high rounded text-on-primary-fixed-variant font-label-sm text-label-sm uppercase font-semibold">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+            Institutional Public
+          </span>
+<span class="inline-flex items-center gap-1 px-space-sm py-1 bg-surface rounded text-steel-grey font-label-sm text-label-sm uppercase">
+            REV. 2025.01
+          </span>
+</div>
+</div>
+<!-- Main Headline & Subtitle -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-xs">
+<h1 class="font-headline-xl text-headline-xl text-primary-container tracking-tight">
+            Terms of Service &amp; Master Engagement Agreement
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+            The binding legal and architectural terms governing enterprise technology engagements, proprietary firmware licenses, cloud telemetry ingestion, and KAGAI Academy student participation.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col items-start lg:items-end gap-space-sm">
+<a class="inline-flex items-center gap-space-sm px-space-md py-space-sm bg-primary-container text-on-primary rounded font-body-sm text-body-sm font-medium hover:bg-primary transition-colors shadow-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">download</span>
+            Download Master MSA (PDF)
+          </a>
+<button class="inline-flex items-center gap-space-sm px-space-md py-space-sm bg-surface-container-high text-on-surface rounded font-body-sm text-body-sm font-medium hover:bg-surface-container-highest transition-colors" id="open-counsel-btn">
+<span class="material-symbols-outlined text-[18px]">contact_mail</span>
+            Contact Legal Counsel
+          </button>
+</div>
+</div>
+<!-- Metadata Data Ribbon -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm mt-space-xs">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">calendar_today</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase">Effective Date</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">January 1, 2025</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase">Applicable Law</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Republic of India &amp; England/Wales (Bilateral)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase">Audited Compliance</span>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">ISO/IEC 27001:2022 &amp; SOC 2 Type II</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick-jump Filter Pill Ribbon (Sticky Horizon) -->
+<section class="sticky top-20 z-40 bg-surface/90 backdrop-blur-md shadow-[0_4px_12px_rgba(8,24,72,0.03)] px-margin-sm lg:px-margin-lg py-space-xs">
+<div class="max-w-7xl mx-auto flex items-center gap-space-xs overflow-x-auto py-1 scrollbar-none">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase whitespace-nowrap mr-2">Quick Jump:</span>
+<a class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm whitespace-nowrap transition-colors" href="#clause-1">01. Acceptance</a>
+<a class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm whitespace-nowrap transition-colors" href="#clause-2">02. Enterprise Engagements</a>
+<a class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm whitespace-nowrap transition-colors" href="#clause-3">03. IP &amp; Bespoke Code</a>
+<a class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm whitespace-nowrap transition-colors" href="#clause-4">04. Firmware Licensing</a>
+<a class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm whitespace-nowrap transition-colors" href="#clause-5">05. SLAs &amp; Telemetry</a>
+<a class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm whitespace-nowrap transition-colors" href="#clause-6">06. Acceptable Use</a>
+<a class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm whitespace-nowrap transition-colors" href="#clause-7">07. Liability Limitations</a>
+<a class="px-space-sm py-1 bg-surface-container-high rounded text-on-surface hover:bg-primary-container hover:text-on-primary font-label-sm text-label-sm whitespace-nowrap transition-colors" href="#clause-8">08. Dispute Resolution</a>
+</div>
+</section>
+<!-- Editorial Split Workspace: Sticky Sidebar + Main Legal Corpus -->
+<main class="w-full px-margin-sm lg:px-margin-lg py-space-2xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- Left Column: Sticky Index Navigator (Desktop) -->
+<aside class="hidden lg:block lg:col-span-4 sticky top-36">
+<div class="flex flex-col gap-space-md bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-container font-bold uppercase tracking-wider">Document Index</span>
+<span class="font-label-sm text-label-sm text-steel-grey font-mono">8 SECTIONS</span>
+</div>
+<nav class="flex flex-col gap-1 text-on-surface-variant font-body-sm text-body-sm">
+<a class="toc-link group flex items-start justify-between p-2 rounded hover:bg-surface-container hover:text-primary-container transition-colors" href="#clause-1">
+<span class="flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono group-hover:text-primary-container">01</span>
+<span>Acceptance &amp; User Eligibility</span>
+</span>
+<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="toc-link group flex items-start justify-between p-2 rounded hover:bg-surface-container hover:text-primary-container transition-colors" href="#clause-2">
+<span class="flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono group-hover:text-primary-container">02</span>
+<span>Enterprise Engagements &amp; SOWs</span>
+</span>
+<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="toc-link group flex items-start justify-between p-2 rounded hover:bg-surface-container hover:text-primary-container transition-colors" href="#clause-3">
+<span class="flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono group-hover:text-primary-container">03</span>
+<span>Intellectual Property &amp; Bespoke Code</span>
+</span>
+<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="toc-link group flex items-start justify-between p-2 rounded hover:bg-surface-container hover:text-primary-container transition-colors" href="#clause-4">
+<span class="flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono group-hover:text-primary-container">04</span>
+<span>Software Licensing &amp; Firmware Restrictions</span>
+</span>
+<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="toc-link group flex items-start justify-between p-2 rounded hover:bg-surface-container hover:text-primary-container transition-colors" href="#clause-5">
+<span class="flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono group-hover:text-primary-container">05</span>
+<span>Service Levels &amp; Cloud Telemetry (SLA)</span>
+</span>
+<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="toc-link group flex items-start justify-between p-2 rounded hover:bg-surface-container hover:text-primary-container transition-colors" href="#clause-6">
+<span class="flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono group-hover:text-primary-container">06</span>
+<span>Acceptable Use &amp; Security Guardrails</span>
+</span>
+<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="toc-link group flex items-start justify-between p-2 rounded hover:bg-surface-container hover:text-primary-container transition-colors" href="#clause-7">
+<span class="flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono group-hover:text-primary-container">07</span>
+<span>Limitation of Liability &amp; Damages</span>
+</span>
+<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+<a class="toc-link group flex items-start justify-between p-2 rounded hover:bg-surface-container hover:text-primary-container transition-colors" href="#clause-8">
+<span class="flex items-baseline gap-2">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono group-hover:text-primary-container">08</span>
+<span>Dispute Resolution &amp; Arbitration</span>
+</span>
+<span class="material-symbols-outlined text-[16px] opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
+</a>
+</nav>
+<!-- Architectural Governance Note -->
+<div class="mt-space-sm p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold uppercase">Legal Architecture</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              This document forms the overarching Master Platform Agreement. Specific Statements of Work (SOW) supersede general clauses strictly to the extent of direct conflicts.
+            </p>
+</div>
+<!-- Document Version History Card -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded font-label-sm text-label-sm">
+<span class="text-steel-grey">Prior Revision: v2024.4</span>
+<a class="text-secondary hover:underline font-semibold flex items-center gap-1" href="#">
+              Compare diff <span class="material-symbols-outlined text-[14px]">difference</span>
+</a>
+</div>
+</div>
+</aside>
+<!-- Right Column: Formal Legal Clauses -->
+<div class="lg:col-span-8 flex flex-col gap-space-2xl">
+<!-- Preamble / Institutional Notice -->
+<div class="p-space-lg bg-surface-container-lowest rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[20px]">gavel</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Preamble &amp; Parties</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+            This Master Platform Agreement and Terms of Service (hereinafter, the <strong class="font-semibold text-primary-container">"Agreement"</strong>) is entered into by and between <strong class="font-semibold text-primary-container">KAGAI Innovation Technology Ltd.</strong> (together with its worldwide affiliates, "KAGAI", "we", "us", or "our") and the corporate entity, institutional partner, or individual accessing KAGAI digital platforms, APIs, hardware firmware images, or training environments ("Client", "Licensee", or "User"). By accessing or utilizing any KAGAI service, the Client represents that its representative has full corporate authority to bind the entity.
+          </p>
+</div>
+<!-- CLAUSE 1 -->
+<article class="scroll-mt-32 flex flex-col gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-sm" id="clause-1">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-md text-label-md text-secondary font-mono">01.0</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">Acceptance of Terms &amp; Capacity</h2>
+</div>
+<div class="flex flex-col gap-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+<p>
+              1.1 <strong class="font-semibold text-primary-container">Capacity and Authority:</strong> The services provided by KAGAI are exclusively intended for commercial, institutional, and professional engineering deployment. You warrant that you are of legal age and possess full corporate capacity to execute contracts in the jurisdiction where your operations are situated.
+            </p>
+<p>
+              1.2 <strong class="font-semibold text-primary-container">Ecosystem Scope:</strong> This Agreement governs all interfaces operated under the KAGAI technical umbrella, including but not limited to:
+            </p>
+<ul class="list-disc list-inside space-y-1 text-on-surface-variant pl-space-sm">
+<li>The KAGAI Public Portal, Developer Hub, and REST/gRPC API telemetry pipelines.</li>
+<li>Enterprise Cloud Management Portals and Micro-services Orchestration clusters.</li>
+<li>Embedded cryptographic firmware binaries distributed for Industrial IoT controllers.</li>
+<li>The KAGAI Academy learning infrastructure, code repos, and interactive labs.</li>
+</ul>
+<p>
+              1.3 <strong class="font-semibold text-primary-container">Academy Participants:</strong> Individuals registered under the KAGAI Academy cohort programs are additionally bound by academic integrity standards, intellectual property non-disclosure rules, and compute sandbox quotas specified in Section 6.
+            </p>
+</div>
+</article>
+<!-- CLAUSE 2 -->
+<article class="scroll-mt-32 flex flex-col gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-sm" id="clause-2">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-md text-label-md text-secondary font-mono">02.0</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">Enterprise Engagements &amp; Master Service Schedules</h2>
+</div>
+<div class="flex flex-col gap-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+<p>
+              2.1 <strong class="font-semibold text-primary-container">Statements of Work (SOW):</strong> Commercial technology advisory, bespoke software architecture, and firmware prototyping shall be documented in individually numbered Statements of Work executed by authorized signatories.
+            </p>
+<p>
+              2.2 <strong class="font-semibold text-primary-container">Order of Precedence:</strong> In the event of a direct conflict between the terms of this Agreement and any executed SOW, the specific terms of the SOW shall supersede solely for the scope, milestones, and deliverables defined in that particular schedule.
+            </p>
+<!-- Graphic Matrix / Hierarchy Box -->
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-sm mt-space-xs">
+<span class="font-label-sm text-label-sm text-primary-container font-semibold uppercase tracking-wider">Hierarchy of Governance</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm text-center">
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-sm">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono block">TIER 1</span>
+<span class="font-body-sm text-body-sm text-primary-container font-bold">Executed SOW</span>
+<span class="font-label-sm text-label-sm text-steel-grey block mt-1">Specific scope &amp; fees</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-sm">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono block">TIER 2</span>
+<span class="font-body-sm text-body-sm text-primary-container font-bold">Enterprise MSA</span>
+<span class="font-label-sm text-label-sm text-steel-grey block mt-1">Underlying legal baseline</span>
+</div>
+<div class="p-space-sm bg-surface-container-lowest rounded shadow-sm">
+<span class="font-label-sm text-label-sm text-steel-grey font-mono block">TIER 3</span>
+<span class="font-body-sm text-body-sm text-primary-container font-bold">Platform Terms</span>
+<span class="font-label-sm text-label-sm text-steel-grey block mt-1">Digital portal usage</span>
+</div>
+</div>
+</div>
+</div>
+</article>
+<!-- CLAUSE 3 -->
+<article class="scroll-mt-32 flex flex-col gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-sm" id="clause-3">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-md text-label-md text-secondary font-mono">03.0</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">Intellectual Property &amp; Bespoke Code Ownership</h2>
+</div>
+<div class="flex flex-col gap-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+<p>
+              3.1 <strong class="font-semibold text-primary-container">Client Deliverables Assignment:</strong> Conditioned upon full and final payment of all corresponding milestone fees, KAGAI hereby assigns and transfers to the Client all worldwide right, title, and interest in and to bespoke application source code and domain models specifically authored for the Client under an executed SOW ("Client Deliverables").
+            </p>
+<p>
+              3.2 <strong class="font-semibold text-primary-container">KAGAI Background IP &amp; Microkernels:</strong> Notwithstanding Section 3.1, KAGAI retains sole and exclusive ownership of all pre-existing software, base microkernel code, firmware drivers, distributed consensus libraries, mathematical schemas, automated deployment pipelines, and pedagogical assets authored independently of the SOW ("KAGAI Core IP").
+            </p>
+<!-- Visual IP Demarcation Table -->
+<div class="overflow-x-auto mt-space-xs">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container-high text-primary-container font-semibold">
+<th class="p-space-sm rounded-l">Asset Category</th>
+<th class="p-space-sm">Ownership Designation</th>
+<th class="p-space-sm rounded-r">License Scope to Client</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface-variant">
+<tr class="bg-surface-container-low">
+<td class="p-space-sm font-semibold text-on-surface">Bespoke Client Solutions</td>
+<td class="p-space-sm text-on-surface">Client Owned (Post-Settlement)</td>
+<td class="p-space-sm">Perpetual, Exclusive, Worldwide</td>
+</tr>
+<tr class="bg-surface-container-lowest">
+<td class="p-space-sm font-semibold text-on-surface">KAGAI Core Firmware Binaries</td>
+<td class="p-space-sm text-primary-container font-semibold">KAGAI Retained Exclusively</td>
+<td class="p-space-sm">Non-Exclusive, Runtime Object Only</td>
+</tr>
+<tr class="bg-surface-container-low">
+<td class="p-space-sm font-semibold text-on-surface">Academy Curriculum &amp; Labs</td>
+<td class="p-space-sm text-primary-container font-semibold">KAGAI Retained Exclusively</td>
+<td class="p-space-sm">Personal, Non-Transferable Seat</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="text-steel-grey font-label-sm text-label-sm">
+              Note: Embedded KAGAI Core IP inside Client Deliverables is licensed under a perpetual, non-exclusive, royalty-free, worldwide license strictly for the Client's internal business runtime execution.
+            </p>
+</div>
+</article>
+<!-- CLAUSE 4 -->
+<article class="scroll-mt-32 flex flex-col gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-sm" id="clause-4">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-md text-label-md text-secondary font-mono">04.0</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">Software Licensing &amp; Edge Firmware Restrictions</h2>
+</div>
+<div class="flex flex-col gap-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+<p>
+              4.1 <strong class="font-semibold text-primary-container">Firmware Execution Rights:</strong> KAGAI grants to the authorized enterprise partner a revocable, non-transferable, non-sublicensable license to flash, run, and execute compiled firmware binary images exclusively on certified edge devices deployed within approved operational perimeters.
+            </p>
+<!-- Warning Callout Box -->
+<div class="p-space-md bg-surface-container-high rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[24px] shrink-0 mt-0.5">warning</span>
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Absolute Prohibitions on Binary Modification</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+                  Licensee shall not, directly or through third-party agents: (i) decompile, disassemble, reverse engineer, or decrypt firmware binary blobs; (ii) bypass or attempt to manipulate Hardware Security Modules (HSM) or cryptographic roots of trust; or (iii) bridge air-gapped test images to unsecured wide-area public networks.
+                </p>
+</div>
+</div>
+<p>
+              4.2 <strong class="font-semibold text-primary-container">Automated Integrity Auditing:</strong> KAGAI edge runtimes embed cryptographic attestation tokens. In the event of unauthorized modification or hash mismatches, the runtime may automatically lock down secure partitions to prevent systemic operational compromise.
+            </p>
+</div>
+</article>
+<!-- CLAUSE 5 -->
+<article class="scroll-mt-32 flex flex-col gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-sm" id="clause-5">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-md text-label-md text-secondary font-mono">05.0</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">Service Levels &amp; Cloud Telemetry (SLA)</h2>
+</div>
+<div class="flex flex-col gap-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+<p>
+              5.1 <strong class="font-semibold text-primary-container">Availability Commitment:</strong> KAGAI guarantees a <strong class="font-semibold text-primary-container">99.995% Service Level Agreement ("SLA")</strong> for dedicated production-grade cloud telemetry endpoints, excluding pre-notified scheduled maintenance windows.
+            </p>
+<!-- SLA Metrics Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm my-space-xs">
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase">Target Uptime</span>
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold">99.995%</span>
+<span class="font-body-sm text-body-sm text-steel-grey mt-1">Multi-region active failover</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase">P1 Response Time</span>
+<span class="font-headline-lg text-headline-lg text-secondary font-bold">&lt; 15 mins</span>
+<span class="font-body-sm text-body-sm text-steel-grey mt-1">24x7x365 direct SOC bridge</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase">Service Credit Cap</span>
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold">30.0%</span>
+<span class="font-body-sm text-body-sm text-steel-grey mt-1">Of applicable monthly billing</span>
+</div>
+</div>
+<p>
+              5.2 <strong class="font-semibold text-primary-container">Service Credit Escalation:</strong> In the event uptime falls below agreed thresholds during any calendar month, Client shall be entitled to credits in accordance with the executed Service Level Addendum. Service credits represent Client's sole and exclusive remedy for availability impairments.
+            </p>
+</div>
+</article>
+<!-- CLAUSE 6 -->
+<article class="scroll-mt-32 flex flex-col gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-sm" id="clause-6">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-md text-label-md text-secondary font-mono">06.0</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">Acceptable Use &amp; Security Guardrails</h2>
+</div>
+<div class="flex flex-col gap-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+<p>
+              6.1 <strong class="font-semibold text-primary-container">Security Integrity Requirements:</strong> Users and partner organizations shall not engage in actions that degrade, compromise, or monitor unauthorized production clusters.
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-xs">
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-semibold font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">block</span>
+                  Penetration Testing Restrictions
+                </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Penetration testing, vulnerability scanning, and red-team drills are strictly prohibited without a mutually signed Security Clearance Addendum issued at least ten (10) business days prior to test initiation.
+                </p>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-secondary font-semibold font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+                  Rate Limiting &amp; Telemetry Floods
+                </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  API traffic is governed by configured throughput quotas. Artificial load spikes, denial-of-service simulations, and unthrottled loop ingestion will trigger automatic IP blacklisting and immediate circuit interruption.
+                </p>
+</div>
+</div>
+<p>
+              6.2 <strong class="font-semibold text-primary-container">KAGAI Academy Conduct:</strong> Students utilizing Academy lab clusters must not run cryptomining scripts, network scanners, or malicious payloads against neighboring student sandbox tenants. Non-compliance results in immediate revocation of credentials without tuition reimbursement.
+            </p>
+</div>
+</article>
+<!-- CLAUSE 7 -->
+<article class="scroll-mt-32 flex flex-col gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-sm" id="clause-7">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-md text-label-md text-secondary font-mono">07.0</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">Limitation of Liability &amp; Consequential Damages</h2>
+</div>
+<div class="flex flex-col gap-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+<!-- Prominent Legal Disclaimer Block -->
+<div class="p-space-md bg-surface-container rounded-lg font-mono text-label-md leading-relaxed text-on-surface uppercase">
+              TO THE MAXIMUM EXTENT PERMITTED BY LAW, NEITHER PARTY SHALL BE LIABLE FOR INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING LOSS OF PROFITS, LOSS OF REVENUE, LOSS OF BUSINESS OPPORTUNITY, CORRUPTION OF DATA, OR PRODUCTION DOWNTIME, REGARDLESS OF THE LEGAL THEORY ASSERTED.
+            </div>
+<p>
+              7.1 <strong class="font-semibold text-primary-container">Aggregate Liability Cap:</strong> In no event shall KAGAI's total aggregate liability arising out of or related to this Agreement, whether in contract, tort (including negligence), or otherwise, exceed the aggregate sums actually paid by the Client to KAGAI under the applicable Statement of Work during the twelve (12) calendar months preceding the incident giving rise to liability.
+            </p>
+<p>
+              7.2 <strong class="font-semibold text-primary-container">Exclusions:</strong> The limitations specified in this Section 7 shall not apply to: (i) gross negligence or willful misconduct; (ii) breaches of Section 4 (Firmware &amp; Software Licensing Restrictions); or (iii) indemnification obligations for third-party intellectual property claims.
+            </p>
+</div>
+</article>
+<!-- CLAUSE 8 -->
+<article class="scroll-mt-32 flex flex-col gap-space-md bg-surface-container-lowest p-space-xl rounded-xl shadow-sm" id="clause-8">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-label-md text-label-md text-secondary font-mono">08.0</span>
+<h2 class="font-headline-lg text-headline-lg text-primary-container tracking-tight">Governing Law, Arbitration &amp; Dispute Resolution</h2>
+</div>
+<div class="flex flex-col gap-space-md font-body-md text-body-md text-on-surface leading-relaxed">
+<p>
+              8.1 <strong class="font-semibold text-primary-container">Escalation and Negotiation:</strong> The parties agree to resolve any dispute, controversy, or claim arising under or relating to this Agreement first through good-faith executive escalation. Within ten (10) business days of written notice, designated senior executives of each party shall convene to attempt an amicable commercial resolution.
+            </p>
+<!-- Tiered Resolution Flow Visual -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md mt-space-xs">
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary-container font-bold uppercase">Forum A: Asia-Pacific &amp; India Ops</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  For engagements originated or performed within India or the APAC theater: Administered under the <strong class="text-on-surface">Arbitration and Conciliation Act, 1996</strong>. The seat and venue of arbitration shall be <strong class="text-on-surface">Bengaluru, Karnataka, India</strong>. Proceedings in English before a sole arbitrator.
+                </p>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary-container font-bold uppercase">Forum B: UK, Europe &amp; Global Ops</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  For engagements originated or performed within EMEA, the Americas, or international waters: Governed by the laws of <strong class="text-on-surface">England &amp; Wales</strong>. Settled under the Rules of the <strong class="text-on-surface">London Court of International Arbitration (LCIA)</strong>. The seat shall be <strong class="text-on-surface">London, UK</strong>.
+                </p>
+</div>
+</div>
+<p>
+              8.2 <strong class="font-semibold text-primary-container">Injunctive Relief:</strong> Nothing herein prevents either party from seeking preliminary or emergency injunctive relief in a court of competent jurisdiction to protect its trade secrets, intellectual property, or confidential systems.
+            </p>
+</div>
+</article>
+<!-- Final Signoff & Acknowledgment Action Box -->
+<div class="p-space-xl bg-primary-container text-on-primary rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-md shadow-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">Need a Customized Enterprise MSA?</span>
+<p class="font-body-sm text-body-sm text-on-primary-container max-w-xl">
+              Tier-1 financial institutions, critical infrastructure operators, and defense clients requiring bespoke SOC 2 covenants or dedicated data residency may request formal redline schedules.
+            </p>
+</div>
+<a class="px-space-md py-space-sm bg-secondary text-on-secondary hover:bg-on-secondary-fixed-variant rounded font-body-sm text-body-sm font-medium transition-colors whitespace-nowrap shadow-sm" href="#">
+            Request Bespoke Redline
+          </a>
+</div>
+</div>
+</div>
+</main>
+<!-- Legal Counsel Drawer Modal (Interactive Client micro-interaction) -->
+<aside class="fixed inset-y-0 right-0 w-full sm:w-[460px] bg-surface-container-lowest shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col" id="counsel-drawer">
+<div class="p-space-lg bg-primary-container text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">policy</span>
+<span class="font-headline-sm text-headline-sm font-bold">Office of Legal Counsel</span>
+</div>
+<button class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-variant/20 transition-colors" id="close-counsel-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg flex-1 overflow-y-auto flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase">Official Legal Contact</span>
+<p class="font-body-md text-body-md text-on-surface font-semibold">KAGAI Innovation Technology Legal &amp; Governance Division</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">General inquiries regarding terms, SOC2 reports, and NDA execution.</p>
+</div>
+<div class="flex flex-col gap-space-sm p-space-md bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-steel-grey text-[18px]">alternate_email</span>
+<span>legal-governance@kagai.tech</span>
+</div>
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-steel-grey text-[18px]">verified</span>
+<span>GPG Key ID: 0x8DF49B12E091</span>
+</div>
+<div class="flex items-center gap-space-sm font-body-sm text-body-sm text-on-surface">
+<span class="material-symbols-outlined text-steel-grey text-[18px]">location_on</span>
+<span>Bengaluru &amp; London General Counsel Desks</span>
+</div>
+</div>
+<!-- Quick Message Form -->
+<form class="flex flex-col gap-space-md" onsubmit="event.preventDefault(); alert('Message dispatched to KAGAI Legal Operations Desk.');">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase">Corporate Entity</label>
+<input class="px-space-md py-space-sm bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="e.g. Apex Core Systems Ltd." required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase">Inquiry Type</label>
+<select class="px-space-md py-space-sm bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container">
+<option>Master Service Agreement Redline</option>
+<option>SOC 2 &amp; ISO 27001 Package Request</option>
+<option>Student Academic Conduct Appeal</option>
+<option>Firmware Security Notice</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface font-semibold uppercase">Subject &amp; Reference No.</label>
+<textarea class="px-space-md py-space-sm bg-surface-container-low rounded text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container resize-none" placeholder="Detail the clause or agreement under inquiry..." required="" rows="4"></textarea>
+</div>
+<button class="w-full py-space-sm bg-primary-container text-on-primary rounded font-body-sm text-body-sm font-semibold hover:bg-primary transition-colors" type="submit">
+          Transmit to Legal Secretariat
+        </button>
+</form>
+</div>
+</aside>
+<!-- Interactive Backdrop for Drawer -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-sm z-40 hidden transition-opacity duration-300" id="drawer-backdrop"></div>
+<!-- Lightweight Script for TOC & Modal Interactions -->
+<script>
+    (function() {
+      // Drawer logic
+      const counselBtn = document.getElementById('open-counsel-btn');
+      const closeBtn = document.getElementById('close-counsel-btn');
+      const drawer = document.getElementById('counsel-drawer');
+      const backdrop = document.getElementById('drawer-backdrop');
+
+      function openDrawer() {
+        if (!drawer || !backdrop) return;
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('hidden');
+      }
+
+      function closeDrawer() {
+        if (!drawer || !backdrop) return;
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('hidden');
+      }
+
+      if (counselBtn) counselBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (backdrop) backdrop.addEventListener('click', closeDrawer);
+
+      // Smooth scroll adjustment and active state indicator for TOC
+      const tocLinks = document.querySelectorAll('.toc-link');
+      const observerOptions = {
+        root: null,
+        rootMargin: '-100px 0px -60% 0px',
+        threshold: 0.1
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            tocLinks.forEach(link => {
+              if (link.getAttribute('href') === '#' + id) {
+                link.classList.add('bg-surface-container', 'text-primary-container', 'font-semibold');
+              } else {
+                link.classList.remove('bg-surface-container', 'text-primary-container', 'font-semibold');
+              }
+            });
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll('article[id^="clause-"]').forEach(article => {
+        observer.observe(article);
+      });
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface shadow-[0_-1px_8px_rgba(8,24,72,0.03)]"><div class="w-full px-margin-sm lg:px-margin-lg pt-space-2xl pb-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-2xl"><div class="lg:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><img alt="Logo3.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDPE_5BZsLKOQ8iztW-2mYiB8R60lEsfjQ2KKGkK5-Fqg_bGumyq1lQw2wEPHhDUOdKHSoZX6RR8-0sCkJmhYCXZEfVvJn5KonzmQ0S2RSPDblIlCJpR-QxJZaxYrcvy2pYOKoDpjFFkVw_7F23f7bTabc6L5UYOsLmZo14FXXiSEPe6agrtOlf5NmnJ3biZnL44ckILAeHmcJVUwIw7XxY4oMAPdrsV0V7Wo75bgDVjxrqg8vuCNperg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary-container leading-none">KAGAI</span><span class="font-label-sm text-label-sm tracking-widest text-steel-grey uppercase">Innovation Technology</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Engineering high-integrity corporate software, IoT ecosystems, cybersecurity infrastructure, and applied digital education across global enterprises.</p><div class="flex flex-col gap-space-xs pt-space-xs"><span class="font-label-sm text-label-sm text-steel-grey uppercase tracking-wider">Registered Global Offices</span><p class="font-body-sm text-body-sm text-on-surface font-medium">London • Singapore • Nairobi • Bengaluru</p></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-semibold mb-space-xs">Company</h3><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="about-us" href="#">About KAGAI</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="leadership-governance" href="#">Leadership &amp; Governance</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="careers-fellowships" href="#">Careers &amp; Fellowships</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="insights" href="#">Research &amp; Insights</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="press-media" href="#">Press &amp; Media</a></li></ul></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-semibold mb-space-xs">Services &amp; Solutions</h3><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="solutions" href="#">Enterprise Engineering</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="solutions" href="#">Cybersecurity Operations</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="solutions" href="#">Industrial IoT Architecture</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="solutions" href="#">Cloud Transformation</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="solutions" href="#">Technical Advisory</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-semibold mb-space-xs">Learning &amp; Legal</h3><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="academy" href="#">KAGAI Academy</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="auth" href="#">Student Portal</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="privacy-policy" href="#">Privacy Policy</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="terms-of-service" href="#">Terms of Service</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="compliance-iso-27001" href="#">Compliance &amp; ISO 27001</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-steel-grey">© 2025 KAGAI Innovation Technology Ltd. All rights reserved.</p><div class="flex flex-wrap items-center gap-space-md font-body-sm text-body-sm text-steel-grey"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy</a><span class="text-outline-variant">•</span><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms</a><span class="text-outline-variant">•</span><a class="hover:text-on-surface transition-colors" data-path="compliance-iso-27001" href="#">ISO Certification</a><span class="text-outline-variant">•</span><a class="hover:text-on-surface transition-colors" data-path="cookie-settings" href="#">Cookie Settings</a></div></div></div></footer></body></html>

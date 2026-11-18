@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;family=Space+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "inverse-primary": "#b7c4fe",
+          "on-tertiary": "#ffffff",
+          "on-background": "#131c2a",
+          "on-primary-fixed": "#071747",
+          "primary-fixed-dim": "#b7c4fe",
+          "primary-fixed": "#dce1ff",
+          "outline-variant": "#c6c5d0",
+          "surface": "#f9f9ff",
+          "tertiary-fixed-dim": "#ffb598",
+          "steel-grey": "#737D8C",
+          "on-error": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "light-border": "#E1E5EB",
+          "tertiary": "#050100",
+          "surface-container-highest": "#dae3f7",
+          "outline": "#767680",
+          "on-primary-container": "#7582b7",
+          "surface-tint": "#4f5c8f",
+          "error": "#ba1a1a",
+          "surface-container-low": "#f0f3ff",
+          "background": "#f9f9ff",
+          "inverse-surface": "#283140",
+          "secondary-fixed-dim": "#ffb3b2",
+          "surface-bright": "#f9f9ff",
+          "on-primary": "#ffffff",
+          "tertiary-container": "#380f00",
+          "surface-container": "#e7eeff",
+          "on-tertiary-fixed": "#370e00",
+          "on-tertiary-container": "#b77458",
+          "surface-dim": "#d1daee",
+          "on-error-container": "#93000a",
+          "on-surface": "#131c2a",
+          "primary": "#000109",
+          "secondary": "#b71f31",
+          "primary-container": "#081848",
+          "secondary-fixed": "#ffdad8",
+          "surface-variant": "#dae3f7",
+          "on-secondary-fixed": "#410008",
+          "surface-container-high": "#dfe8fd",
+          "on-secondary": "#ffffff",
+          "inverse-on-surface": "#ecf1ff",
+          "on-tertiary-fixed-variant": "#6e3821",
+          "on-secondary-container": "#5b000f",
+          "error-container": "#ffdad6",
+          "pure-white": "#FFFFFF",
+          "tertiary-fixed": "#ffdbce",
+          "secondary-container": "#fd545e",
+          "soft-grey": "#F3F4F6",
+          "on-surface-variant": "#45464f",
+          "on-secondary-fixed-variant": "#92001e",
+          "on-primary-fixed-variant": "#374475"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-lg": "4rem",
+          "gutter-sm": "1rem",
+          "space-lg": "1.5rem",
+          "space-xs": "0.25rem",
+          "space-2xl": "4rem",
+          "margin": "2rem",
+          "margin-sm": "1rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "gutter": "1.5rem",
+          "gutter-lg": "2rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": [
+            "Manrope"
+          ],
+          "headline-sm": [
+            "Manrope"
+          ],
+          "display-lg": [
+            "Manrope"
+          ],
+          "headline-md": [
+            "Manrope"
+          ],
+          "display-lg-mobile": [
+            "Manrope"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Manrope"
+          ],
+          "label-sm": [
+            "Space Mono"
+          ],
+          "headline-xl": [
+            "Manrope"
+          ],
+          "label-md": [
+            "Space Mono"
+          ],
+          "body-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-pure-white/95 backdrop-blur-md shadow-[0_8px_24px_-4px_rgba(8,24,72,0.06),0_2px_6px_-1px_rgba(8,24,72,0.04)]"><div class="bg-primary-container text-on-primary border-b border-light-border/20"><div class="w-full px-gutter-lg py-1.5 flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider"><span>New technical courses are now available in the KAGAI Academy • Explore our engineering solutions</span><button aria-label="Dismiss alert" class="flex items-center text-on-primary/70 hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[16px]">close</span></button></div></div><div class="h-20 w-full px-gutter-lg flex items-center justify-between border-b border-light-border"><div class="flex items-center gap-space-md"><img alt="Logo3.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDPE_5BZsLKOQ8iztW-2mYiB8R60lEsfjQ2KKGkK5-Fqg_bGumyq1lQw2wEPHhDUOdKHSoZX6RR8-0sCkJmhYCXZEfVvJn5KonzmQ0S2RSPDblIlCJpR-QxJZaxYrcvy2pYOKoDpjFFkVw_7F23f7bTabc6L5UYOsLmZo14FXXiSEPe6agrtOlf5NmnJ3biZnL44ckILAeHmcJVUwIw7XxY4oMAPdrsV0V7Wo75bgDVjxrqg8vuCNperg"/><a class="flex flex-col text-left" data-path="home" href="#"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary-container leading-none">KAGAI</span><span class="font-label-sm text-label-sm tracking-widest text-steel-grey uppercase">Innovation Technology</span></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary-container font-semibold border-b-2 border-secondary"><a aria-current="page" class="py-2 transition-colors text-primary-container font-semibold border-b-2 border-secondary" data-path="home" href="#">Home</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="about-us" href="#">About Us</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="services" href="#">Services</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="solutions" href="#">Solutions</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="academy" href="#">Academy</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="insights" href="#">Insights</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><button aria-label="Quick Search" class="p-2 text-on-surface-variant hover:text-primary-container hover:bg-soft-grey rounded-lg transition-colors"><span class="material-symbols-outlined">search</span></button><a class="hidden sm:inline-flex items-center font-label-md text-label-md uppercase tracking-wider px-space-md py-2 rounded-full bg-soft-grey text-on-surface-variant hover:bg-surface-container-high hover:text-primary-container border border-light-border transition-all" data-path="client-portal" href="#">Client Portal / Student Login</a><a class="inline-flex items-center font-body-sm text-body-sm font-semibold px-space-md py-2.5 rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container transition-all shadow-[0_8px_24px_-4px_rgba(8,24,72,0.06)]" data-path="discuss-project" href="#">Let's Discuss Your Project</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-[116px] bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- =========================================================================
+       SECTION 03 — EDITORIAL HERO SECTION
+       ========================================================================= -->
+<section class="relative w-full px-gutter-lg py-space-2xl bg-surface overflow-hidden">
+<!-- Subtle technical grid background -->
+<div class="absolute inset-0 bg-[radial-gradient(#dae3f7_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none"></div>
+<div class="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Left Narrative Column (7 cols) -->
+<div class="lg:col-span-7 space-y-space-md z-10">
+<div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-soft-grey text-on-surface-variant font-label-sm text-label-sm uppercase tracking-widest shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary inline-block animate-pulse"></span>
+<span>Enterprise Technical Architecture • ISO Ready</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary font-bold tracking-tight text-balance">
+          Engineering Ideas Into <span class="text-secondary font-headline-xl">Intelligent Solutions.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-steel-grey max-w-2xl text-balance">
+          We build practical digital experiences, connected technologies, and secure systems that help businesses, institutions, and individuals move forward with structural certainty.
+        </p>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-md">
+<a class="inline-flex items-center gap-space-xs px-space-md py-3 rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-semibold hover:bg-on-secondary-container transition-all shadow-md" data-path="services" href="#">
+<span>Explore Our Services</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-3 rounded-lg bg-surface-container-lowest text-primary-container font-body-sm text-body-sm font-semibold hover:bg-surface-container-high transition-all shadow-sm" data-path="contact" href="#">
+<span>Start a Conversation</span>
+<span class="material-symbols-outlined text-[18px]">forum</span>
+</a>
+</div>
+<!-- Telemetry Status Bar -->
+<div class="pt-space-md grid grid-cols-3 gap-space-sm max-w-lg">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase block">Core Latency</span>
+<span class="font-label-md text-label-md text-primary font-bold">&lt; 11.4 ms</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase block">System Uptime</span>
+<span class="font-label-md text-label-md text-primary font-bold">99.992% SLA</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase block">Zero-Trust Node</span>
+<div class="flex items-center gap-1.5 pt-0.5">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Active Enclave</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Interactive Architectural Graphic (5 cols) -->
+<div class="lg:col-span-5 relative">
+<div class="relative rounded-xl bg-primary-container text-on-primary p-space-lg shadow-xl overflow-hidden">
+<!-- Ambient gradient glow -->
+<div class="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<!-- Console Header -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm border-b border-light-border/10">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest/40"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-surface-container-highest/40"></span>
+<span class="font-label-sm text-label-sm text-outline-variant pl-space-xs">KAGAI_CORE_ROUTER // V4.2</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-highest/20 text-inverse-primary">LIVE INGEST</span>
+</div>
+<!-- Network Architecture SVG Diagram -->
+<div class="py-space-xs">
+<svg class="w-full h-44 text-on-primary" fill="none" viewbox="0 0 380 180" xmlns="http://www.w3.org/2000/svg">
+<path d="M40 90 H140" stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.3" stroke-width="2"></path>
+<path d="M140 90 L220 40" stroke="currentColor" stroke-opacity="0.5" stroke-width="2"></path>
+<path d="M140 90 L220 140" stroke="currentColor" stroke-opacity="0.5" stroke-width="2"></path>
+<path d="M220 40 H320" stroke="currentColor" stroke-opacity="0.7" stroke-width="2"></path>
+<path d="M220 140 H320" stroke="currentColor" stroke-opacity="0.7" stroke-width="2"></path>
+<!-- Nodes -->
+<rect class="fill-surface-container-highest/20" height="40" rx="4" width="40" x="10" y="70"></rect>
+<text class="font-label-sm text-[10px] fill-pure-white" text-anchor="middle" x="30" y="94">IOT</text>
+<rect class="fill-secondary" height="40" rx="4" width="44" x="120" y="70"></rect>
+<text class="font-label-sm text-[10px] fill-pure-white font-bold" text-anchor="middle" x="142" y="94">GATE</text>
+<rect class="fill-surface-container-highest/30" height="40" rx="4" width="44" x="210" y="20"></rect>
+<text class="font-label-sm text-[10px] fill-pure-white" text-anchor="middle" x="232" y="44">ML/AI</text>
+<rect class="fill-surface-container-highest/30" height="40" rx="4" width="44" x="210" y="120"></rect>
+<text class="font-label-sm text-[10px] fill-pure-white" text-anchor="middle" x="232" y="144">ENCL</text>
+<rect class="fill-surface-container-highest/20" height="40" rx="4" width="50" x="310" y="20"></rect>
+<text class="font-label-sm text-[10px] fill-pure-white" text-anchor="middle" x="335" y="44">CLOUD</text>
+<rect class="fill-surface-container-highest/20" height="40" rx="4" width="50" x="310" y="120"></rect>
+<text class="font-label-sm text-[10px] fill-pure-white" text-anchor="middle" x="335" y="144">LEDGER</text>
+</svg>
+</div>
+<!-- Micro Metric Feeds -->
+<div class="space-y-space-xs pt-space-xs font-label-sm text-label-sm border-t border-light-border/10">
+<div class="flex justify-between items-center text-outline-variant">
+<span>MQTT Stream (Broker-01)</span>
+<span class="text-pure-white font-semibold">41,200 msg/sec</span>
+</div>
+<div class="flex justify-between items-center text-outline-variant">
+<span>Memory Footprint (Rust/WASM)</span>
+<span class="text-pure-white font-semibold">18.4 MB (Nominal)</span>
+</div>
+<div class="flex justify-between items-center text-outline-variant">
+<span>mTLS Handshake Encryption</span>
+<span class="text-secondary-fixed font-semibold">ChaCha20-Poly1305</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 04 — COMPANY INTRODUCTION
+       ========================================================================= -->
+<section class="w-full px-gutter-lg py-space-2xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-center">
+<!-- Visual Column -->
+<div class="lg:col-span-5 relative order-2 lg:order-1">
+<div class="relative rounded-xl overflow-hidden shadow-lg aspect-[4/3]">
+<img class="w-full h-full object-cover" data-alt="High-precision industrial engineering workspace with embedded electronic testing boards, robotic sensors, modern CAD blueprints on high-resolution displays, cool deep navy lighting with warm crimson accent indicators in an enterprise technology laboratory." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6YkRQvrsDXt9j-oKhitI_rk1XNenBIXynH_FWlONqn_iHSMDRCA8dniWoWjaeHLwfAcSxE3hzg8mqKYfeAhIbAhpnGssY1arinRFhxH1LSfneG4IfIupk7-bUcjuCRnM3SFuh7TtQXXT-pL6PEZJlmdyILpuM9YD935hiKVPW27PrO1xZ1ZKosejzZRq4rPfMBHePWwb6b_vSSa_nfQmLqE7xjugcM78IoeT_sck"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent flex flex-col justify-end p-space-md text-on-primary">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed">Lab Facility 04</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Embedded Systems Verification Rig</span>
+</div>
+</div>
+</div>
+<!-- Editorial Copy (7 cols) -->
+<div class="lg:col-span-7 space-y-space-md order-1 lg:order-2">
+<div class="inline-flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Mission Architecture</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl font-bold text-primary tracking-tight">
+            Technology Is More Than Code. It’s How We Solve Problems.
+          </h2>
+<p class="font-body-md text-body-md text-steel-grey leading-relaxed">
+            At KAGAI Innovation Technology, we avoid speculative hype cycles. We engineer reliable hardware-to-cloud pathways, resilient distributed systems, and hardened security networks designed to function under rigorous enterprise operating conditions.
+          </p>
+<p class="font-body-md text-body-md text-steel-grey leading-relaxed">
+            From connected industrial equipment in remote environments to fault-tolerant microservices running across multi-cloud regions, our solutions are architected for security, longevity, and operational clarity.
+          </p>
+<!-- Core Metric Strips -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold block">4</span>
+<span class="font-body-sm text-body-sm text-steel-grey font-medium">Core Engineering Disciplines</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<span class="font-headline-lg text-headline-lg text-secondary font-bold block">100%</span>
+<span class="font-body-sm text-body-sm text-steel-grey font-medium">Security-First Architecture</span>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-lg">
+<span class="font-headline-lg text-headline-lg text-primary-container font-bold block">120+</span>
+<span class="font-body-sm text-body-sm text-steel-grey font-medium">Enterprise &amp; Research Deployments</span>
+</div>
+</div>
+<div class="pt-space-xs">
+<a class="inline-flex items-center gap-space-xs font-body-sm text-body-sm font-semibold text-primary-container hover:text-secondary transition-colors" data-path="about-us" href="#">
+<span>Learn More About Our Methodology</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 05 — SERVICES OVERVIEW (Bespoke Varied Editorial Layout)
+       ========================================================================= -->
+<section class="w-full px-gutter-lg py-space-2xl bg-surface">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Specialized Capabilities</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-primary tracking-tight mt-space-xs">
+            Disciplines Built for Scale &amp; Reliability
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-steel-grey max-w-md">
+          A synchronized suite of hardware, cloud, intelligence, and defensive practices executed by specialized engineering cells.
+        </p>
+</div>
+<!-- Asymmetrical Services Mosaic Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Service 1: Large Feature (7 cols) -->
+<div class="md:col-span-7 bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold">01 // SOFTWARE ARCHITECTURE</span>
+<span class="material-symbols-outlined text-steel-grey">terminal</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary">Enterprise Software Engineering</h3>
+<p class="font-body-md text-body-md text-steel-grey">
+              High-throughput backend architectures, microservices, and distributed web platforms engineered in Rust, Go, and TypeScript. Optimized for sub-millisecond query execution, resilient caching, and continuous delivery pipelines.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs font-label-sm text-label-sm">
+<span class="px-2.5 py-1 rounded bg-soft-grey text-on-surface">Go / Rust</span>
+<span class="px-2.5 py-1 rounded bg-soft-grey text-on-surface">Distributed Systems</span>
+<span class="px-2.5 py-1 rounded bg-soft-grey text-on-surface">Event Sourcing</span>
+<span class="px-2.5 py-1 rounded bg-soft-grey text-on-surface">gRPC / GraphQL</span>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-space-xs text-primary font-body-sm text-body-sm font-semibold hover:text-secondary transition-colors" data-path="services" href="#">
+<span>View Software Capabilities</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 2: IoT (5 cols) -->
+<div class="md:col-span-5 bg-primary-container text-on-primary p-space-xl rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary-fixed font-bold">02 // EMBEDDED &amp; TELEMETRY</span>
+<span class="material-symbols-outlined text-inverse-primary">sensors</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-pure-white">IoT &amp; Hardware Telemetry</h3>
+<p class="font-body-sm text-body-sm text-outline-variant">
+              Custom edge firmware, low-power sensor arrays, MQTT bus brokers, and remote gateway orchestration for logistics, power grids, and industrial automation.
+            </p>
+<div class="flex flex-wrap gap-1.5 pt-space-xs font-label-sm text-label-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container-highest/20 text-pure-white">MQTT / CoAP</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-highest/20 text-pure-white">Edge Compute</span>
+<span class="px-2.5 py-1 rounded bg-surface-container-highest/20 text-pure-white">RTOS</span>
+</div>
+</div>
+<div class="pt-space-md">
+<a class="inline-flex items-center gap-space-xs text-pure-white font-body-sm text-body-sm font-semibold hover:text-secondary-fixed transition-colors" data-path="services" href="#">
+<span>Explore IoT Solutions</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Service 3: Cybersecurity (4 cols) -->
+<div class="md:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold block">03 // DEFENSE &amp; AUDIT</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Cybersecurity Operations</h3>
+<p class="font-body-sm text-body-sm text-steel-grey">
+              Hardened zero-trust deployments, threat surface reduction, automated compliance validation, and continuous vulnerability assessment.
+            </p>
+<div class="flex flex-wrap gap-1 font-label-sm text-label-sm pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-soft-grey text-on-surface">Zero-Trust</span>
+<span class="px-2 py-0.5 rounded bg-soft-grey text-on-surface">SOC 2 / ISO</span>
+</div>
+</div>
+<a class="pt-space-sm inline-flex items-center gap-space-xs text-primary font-body-sm text-body-sm font-semibold hover:text-secondary transition-colors" data-path="services" href="#">
+<span>Audit Services</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service 4: AI & Automation (4 cols) -->
+<div class="md:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold block">04 // INTELLIGENCE</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">AI &amp; Automation</h3>
+<p class="font-body-sm text-body-sm text-steel-grey">
+              Production-ready ML pipelines, high-dimensional vector search, automated operational triage, and deterministic agentic systems.
+            </p>
+<div class="flex flex-wrap gap-1 font-label-sm text-label-sm pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-soft-grey text-on-surface">Vector Embeddings</span>
+<span class="px-2 py-0.5 rounded bg-soft-grey text-on-surface">MLOps</span>
+</div>
+</div>
+<a class="pt-space-sm inline-flex items-center gap-space-xs text-primary font-body-sm text-body-sm font-semibold hover:text-secondary transition-colors" data-path="services" href="#">
+<span>AI Architecture</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Service 5 & 6 Combined Spanning Block (4 cols) -->
+<div class="md:col-span-4 bg-surface-container-high/40 p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="space-y-space-sm">
+<span class="font-label-sm text-label-sm text-secondary font-bold block">05 &amp; 06 // CLOUD &amp; ACADEMY</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Cloud Infrastructure &amp; Technical Academy</h3>
+<p class="font-body-sm text-body-sm text-steel-grey">
+              Multi-region Kubernetes, automated IaC workflows paired directly with workforce upskilling cohorts via the accredited KAGAI Academy.
+            </p>
+<div class="flex flex-wrap gap-1 font-label-sm text-label-sm pt-space-xs">
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface">Terraform</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface">Enterprise Labs</span>
+</div>
+</div>
+<a class="pt-space-sm inline-flex items-center gap-space-xs text-primary font-body-sm text-body-sm font-semibold hover:text-secondary transition-colors" data-path="academy" href="#">
+<span>Explore Syllabus</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 06 — FEATURED SOLUTIONS & CASE STUDIES
+       ========================================================================= -->
+<section class="w-full px-gutter-lg py-space-2xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Verified Deployment Record</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-primary tracking-tight mt-space-xs">
+            Engineered Implementations
+          </h2>
+</div>
+<a class="inline-flex items-center gap-space-xs text-primary-container font-body-sm text-body-sm font-semibold hover:text-secondary transition-colors" data-path="solutions" href="#">
+<span>All Case Studies (24)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter-lg">
+<!-- Case Study 1 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="h-48 relative overflow-hidden bg-primary-container">
+<img class="w-full h-full object-cover" data-alt="Technical dashboard displaying multi-node logistics telemetry on an illuminated dark display screen with maps, network vectors, cold-chain sensor status cards, and deep navy tones with precision data lines." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI18tZkXqX0zpxgCT-sFVVxaGKuk66ZihUa-LE19CV4rK7ISyuVCqSSV89eDv2XeR4yeOMl8z6Z0rb-vIi11YsN7Vi6ywelRQHbv3ogx0M2sSa2S102Og3zb0y5dQbryK-DCzgjnk4JIKf2NYujlQUyzNS-AO3AdDVn3YT-MuQA3UYiCOZD-GV5PBb87olpON0ISs6NsZ3ZHEO75g6ulAlAUXuEo9YGOnxdu9Iudo"/>
+<div class="absolute top-3 left-3 px-2 py-1 rounded bg-primary-container/80 text-pure-white font-label-sm text-label-sm uppercase">Smart Logistics</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Industrial IoT Cold-Chain Telemetry</h3>
+<p class="font-body-sm text-body-sm text-steel-grey mt-space-xs">
+                Real-time thermal and shock tracking across 1,800 intermodal shipping containers with automated alerting for pharmaceutical cargo preservation.
+              </p>
+<div class="mt-space-sm space-y-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-steel-grey">Loss Incident Rate</span>
+<span class="text-secondary font-bold">-94.2%</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-steel-grey">Network Latency</span>
+<span class="text-primary font-bold">140ms satellite bus</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm border-t border-light-border/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey">Stack: Rust • LoRaWAN • AWS</span>
+<a class="text-primary font-body-sm text-body-sm font-semibold hover:text-secondary" data-path="solutions" href="#">Read Brief →</a>
+</div>
+</div>
+</div>
+<!-- Case Study 2 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="h-48 relative overflow-hidden bg-primary-container">
+<img class="w-full h-full object-cover" data-alt="Network security operations visual rendering showing encrypted distributed nodes, zero-trust boundary verification diagrams, dark obsidian glass panels with crimson security alert triggers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMBZ-7srJ0RemZnzhPNfvvXPq2rC_vUTnOz6_ny1gUVExSc5DjmVWVGRECY9Qu2pWDveHwYk-oKzYr32jsz_rpn_7DJV2PsjOb3lc8oCU2r2eiNPfLGkiYzq3aVxqN2h7Ea6mf9h-LQqoTnhX9WGNo_FK1RmYjbX9n2IKu-StEtLLeyMlb405cpcKhk45NuRmHeEVRawkQq7W4VhCr7wX8_2FLuteIIGoM9v8ZBaA"/>
+<div class="absolute top-3 left-3 px-2 py-1 rounded bg-primary-container/80 text-pure-white font-label-sm text-label-sm uppercase">Financial Infrastructure</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Zero-Trust Microsegmentation Overhaul</h3>
+<p class="font-body-sm text-body-sm text-steel-grey mt-space-xs">
+                Transitioned a legacy banking gateway into dynamic mTLS service meshes with automated credential rotation and policy-as-code validation.
+              </p>
+<div class="mt-space-sm space-y-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-steel-grey">Unauthorized Ingress</span>
+<span class="text-secondary font-bold">0 Detected Breaches</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-steel-grey">Audit Cycle Time</span>
+<span class="text-primary font-bold">85% Faster</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm border-t border-light-border/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey">Stack: Istio • SPIFFE • Vault</span>
+<a class="text-primary font-body-sm text-body-sm font-semibold hover:text-secondary" data-path="solutions" href="#">Read Brief →</a>
+</div>
+</div>
+</div>
+<!-- Case Study 3 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-sm flex flex-col justify-between">
+<div class="h-48 relative overflow-hidden bg-primary-container">
+<img class="w-full h-full object-cover" data-alt="Modern automation operations center with operators monitoring multi-region server loads, automated decision engine pipelines, and real-time high-throughput message graphs on technical screens." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJqy48BR7qFl-xyR8iANMvHd7ThwwtXxzUAj-IyYfrQWHqEUGIoxtyx3zep61u6R3spjuqbox3p2gw7o6a9R0HAktv1qPU-U2UpL16GYg1oYJgKXIzijBu5HN3IbzxMJryhfjRUYxsmBP3a31ENNiJznSrc8Q8WQ5hDOHbpoWD8Gw0OKXk3O71AuojC__0vNV-HCN8CcH1GdZtpRxrF-x7W7b3xc2_bi2RcI0dsdg"/>
+<div class="absolute top-3 left-3 px-2 py-1 rounded bg-primary-container/80 text-pure-white font-label-sm text-label-sm uppercase">Digital Government</div>
+</div>
+<div class="p-space-lg flex-1 flex flex-col justify-between space-y-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Automated Municipal Workflow Engine</h3>
+<p class="font-body-sm text-body-sm text-steel-grey mt-space-xs">
+                Unified 18 disjointed state services into a deterministic event-driven architecture capable of processing 2.4 million daily requests without manual queue intervention.
+              </p>
+<div class="mt-space-sm space-y-space-xs">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-steel-grey">Processing Backlog</span>
+<span class="text-secondary font-bold">-91% Reduction</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-steel-grey">Daily Peak Volume</span>
+<span class="text-primary font-bold">2.4M requests</span>
+</div>
+</div>
+</div>
+<div class="pt-space-sm border-t border-light-border/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey">Stack: Kafka • Kubernetes • Go</span>
+<a class="text-primary font-body-sm text-body-sm font-semibold hover:text-secondary" data-path="solutions" href="#">Read Brief →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 07 — WHY CHOOSE US?
+       ========================================================================= -->
+<section class="w-full px-gutter-lg py-space-2xl bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<div class="lg:col-span-5 space-y-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">The Engineering Standard</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-primary tracking-tight">
+            Built Around Engineering. Driven by Purpose.
+          </h2>
+<p class="font-body-md text-body-md text-steel-grey leading-relaxed">
+            We avoid agency superficiality. Our leadership and consultants are software practitioners, systems architects, and infrastructure specialists who take technical accountability for every deliverable.
+          </p>
+</div>
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm space-y-space-xs">
+<span class="w-8 h-8 rounded-lg bg-soft-grey text-primary-container flex items-center justify-center font-label-sm font-bold">01</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-primary">Practical Problem-Solving</h3>
+<p class="font-body-sm text-body-sm text-steel-grey">
+              We never introduce complexity for vanity. Every architectural choice directly balances compute overhead, business goals, and maintenance cost.
+            </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm space-y-space-xs">
+<span class="w-8 h-8 rounded-lg bg-soft-grey text-primary-container flex items-center justify-center font-label-sm font-bold">02</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-primary">Security-Conscious Development</h3>
+<p class="font-body-sm text-body-sm text-steel-grey">
+              Defensive security is integrated into line one of the codebase, ensuring least-privilege identity structures and automated vulnerability scans.
+            </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm space-y-space-xs">
+<span class="w-8 h-8 rounded-lg bg-soft-grey text-primary-container flex items-center justify-center font-label-sm font-bold">03</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-primary">Scalable Architecture</h3>
+<p class="font-body-sm text-body-sm text-steel-grey">
+              We design components to fail gracefully. Our systems support horizontal elasticity without compounding operational friction.
+            </p>
+</div>
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm space-y-space-xs">
+<span class="w-8 h-8 rounded-lg bg-soft-grey text-primary-container flex items-center justify-center font-label-sm font-bold">04</span>
+<h3 class="font-headline-sm text-headline-sm font-semibold text-primary">Transparent Collaboration</h3>
+<p class="font-body-sm text-body-sm text-steel-grey">
+              Complete source repository access, clear technical documentation, paired walkthroughs, and exhaustive handover knowledge transfer.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 08 — IOT & INNOVATION SHOWCASE (Interactive Telemetry Simulation)
+       ========================================================================= -->
+<section class="w-full px-gutter-lg py-space-2xl bg-primary-container text-on-primary">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-fixed font-semibold">Hardware-in-the-Loop Showcase</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-pure-white tracking-tight mt-space-xs">
+            Connected Sensor Telemetry &amp; Automation
+          </h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline-variant">SIMULATION ENGINE:</span>
+<span class="px-2.5 py-1 rounded bg-secondary text-pure-white font-label-sm text-label-sm font-bold">ONLINE</span>
+</div>
+</div>
+<!-- Realtime Edge Monitor Dashboard -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Interactive Telemetry Console (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container-highest/10 p-space-lg rounded-xl backdrop-blur-sm space-y-space-md">
+<div class="flex items-center justify-between border-b border-light-border/10 pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">memory</span>
+<div>
+<p class="font-headline-sm text-headline-sm font-bold text-pure-white">Edge Node Cluster // Alpha-09</p>
+<p class="font-label-sm text-label-sm text-steel-grey">Protocol: MQTT over TLS v1.3 • Broker Port 8883</p>
+</div>
+</div>
+<button class="px-3 py-1.5 rounded bg-surface-container-highest/20 hover:bg-secondary text-pure-white font-label-sm text-label-sm transition-colors" id="toggle-stream-btn">
+              Pause Ingest
+            </button>
+</div>
+<!-- Real-time Sparkline Visualization -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between text-outline-variant font-label-sm text-label-sm">
+<span>Telemetry Vibration &amp; Pressure Feed (PSI/Hz)</span>
+<span class="text-secondary-fixed font-bold" id="current-reading">142.8 PSI • 58.2 Hz</span>
+</div>
+<div class="h-32 w-full bg-primary/40 rounded-lg p-2 flex items-end gap-1.5 overflow-hidden" id="bar-chart-container">
+<div class="flex-1 bg-secondary h-[45%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[60%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[52%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[78%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[65%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[40%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[85%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[70%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[62%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[91%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[74%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[58%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[80%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[66%] rounded-sm transition-all duration-300"></div>
+<div class="flex-1 bg-secondary h-[72%] rounded-sm transition-all duration-300"></div>
+</div>
+</div>
+<!-- Gateway Node Indicators -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm pt-space-xs font-label-sm text-label-sm">
+<div class="p-space-sm rounded bg-surface-container-highest/5">
+<span class="text-steel-grey block">GATEWAY TEMP</span>
+<span class="text-pure-white font-bold text-base">41.8 °C</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-highest/5">
+<span class="text-steel-grey block">PACKET LOSS</span>
+<span class="text-pure-white font-bold text-base">0.0002%</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-highest/5">
+<span class="text-steel-grey block">BUFFER QUEUE</span>
+<span class="text-pure-white font-bold text-base">14 msgs</span>
+</div>
+<div class="p-space-sm rounded bg-surface-container-highest/5">
+<span class="text-steel-grey block">ENCRYPTION</span>
+<span class="text-secondary-fixed font-bold text-base">ED25519</span>
+</div>
+</div>
+</div>
+<!-- Automation Pipeline Sidecard (4 cols) -->
+<div class="lg:col-span-4 bg-surface-container-highest/10 p-space-lg rounded-xl backdrop-blur-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase font-bold">Automated Decision Logic</span>
+<h3 class="font-headline-sm text-headline-sm font-bold text-pure-white">Edge Rule Triggering</h3>
+<p class="font-body-sm text-body-sm text-outline-variant">
+              When vibration deviates beyond ±3.8σ, the local firmware executes isolation relays within 6 milliseconds before cloud round-trip latency occurs.
+            </p>
+<div class="p-space-sm bg-primary/60 rounded border-l-2 border-secondary font-label-sm text-label-sm space-y-1">
+<span class="text-outline-variant block">RULE: IF freq &gt; 65Hz THEN isolate_valve()</span>
+<span class="text-secondary-fixed block">STATUS: LISTENING_ACTIVE</span>
+</div>
+</div>
+<a class="w-full py-2.5 rounded-lg bg-surface-container-highest/20 hover:bg-secondary text-pure-white text-center font-body-sm text-body-sm font-semibold transition-colors" data-path="solutions" href="#">
+            Request Hardware Architecture Spec
+          </a>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 09 — ACADEMY PREVIEW
+       ========================================================================= -->
+<section class="w-full px-gutter-lg py-space-2xl bg-surface">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Technical Workforce Upskilling</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-primary tracking-tight mt-space-xs">
+            Learn. Build. Innovate.
+          </h2>
+</div>
+<a class="inline-flex items-center gap-space-xs px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-body-sm text-body-sm font-semibold hover:bg-primary transition-colors shadow-sm" data-path="academy" href="#">
+<span>Explore the Academy</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg">
+<!-- Course 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-soft-grey text-steel-grey font-label-sm text-label-sm">ADVANCED // 8 WEEKS</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">NEXT: OCT 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Advanced IoT &amp; Embedded Systems Architecture</h3>
+<p class="font-body-sm text-body-sm text-steel-grey">
+              Hands-on lab modules focusing on RTOS programming, edge message queues, secure element hardware keys, and power conservation design.
+            </p>
+</div>
+<div class="pt-space-sm border-t border-light-border/40 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm">DR</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Dr. Ronald Vance</span>
+</div>
+<a class="text-secondary font-body-sm text-body-sm font-semibold hover:underline" data-path="academy" href="#">Syllabus →</a>
+</div>
+</div>
+<!-- Course 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-soft-grey text-steel-grey font-label-sm text-label-sm">INTERMEDIATE // 10 WEEKS</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">NEXT: NOV 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Applied Machine Learning &amp; Production MLOps</h3>
+<p class="font-body-sm text-body-sm text-steel-grey">
+              Bridge data science into reliable software. Build deterministic training pipelines, vector databases, and real-time inference serving APIs.
+            </p>
+</div>
+<div class="pt-space-sm border-t border-light-border/40 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm">EK</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">Elena Kovacs</span>
+</div>
+<a class="text-secondary font-body-sm text-body-sm font-semibold hover:underline" data-path="academy" href="#">Syllabus →</a>
+</div>
+</div>
+<!-- Course 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-soft-grey text-steel-grey font-label-sm text-label-sm">INTENSIVE // 6 WEEKS</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">NEXT: DEC 2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Zero-Trust Cyber Defense &amp; Incident Readiness</h3>
+<p class="font-body-sm text-body-sm text-steel-grey">
+              Offensive and defensive simulations across containerized targets, microsegmentation governance, and forensic posture remediation.
+            </p>
+</div>
+<div class="pt-space-sm border-t border-light-border/40 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-label-sm">SA</div>
+<span class="font-body-sm text-body-sm font-medium text-on-surface">S. Al-Mansoor</span>
+</div>
+<a class="text-secondary font-body-sm text-body-sm font-semibold hover:underline" data-path="academy" href="#">Syllabus →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 10 — INSIGHTS & RESEARCH
+       ========================================================================= -->
+<section class="w-full px-gutter-lg py-space-2xl bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto space-y-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-semibold">Technical Publications</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-primary tracking-tight mt-space-xs">
+            Engineering Insights &amp; Papers
+          </h2>
+</div>
+<a class="inline-flex items-center gap-space-xs text-primary-container font-body-sm text-body-sm font-semibold hover:text-secondary transition-colors" data-path="insights" href="#">
+<span>Research Archive</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter-lg">
+<!-- Article 1 -->
+<article class="p-space-lg rounded-xl bg-surface shadow-sm space-y-space-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-steel-grey">
+<span>OCT 14, 2025</span>
+<span>•</span>
+<span>SYSTEMS ARCHITECTURE</span>
+<span>•</span>
+<span>8 MIN READ</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary hover:text-secondary transition-colors cursor-pointer">
+              Implementing Fault-Tolerant MQTT Clusters at Multi-Gigabit Scale
+            </h3>
+<p class="font-body-md text-body-md text-steel-grey leading-relaxed">
+              An architectural breakdown of state synchronization overhead when running broker clusters across geographically separated zones without packet duplication.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">By Infrastructure Lab Team</span>
+<a class="font-body-sm text-body-sm font-semibold text-secondary hover:underline" data-path="insights" href="#">Read Research →</a>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="p-space-lg rounded-xl bg-surface shadow-sm space-y-space-sm flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-steel-grey">
+<span>SEP 28, 2025</span>
+<span>•</span>
+<span>SECURITY RESEARCH</span>
+<span>•</span>
+<span>12 MIN READ</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-primary hover:text-secondary transition-colors cursor-pointer">
+              Zero-Trust Verification for Distributed Microservices via SPIFFE/SPIRE
+            </h3>
+<p class="font-body-md text-body-md text-steel-grey leading-relaxed">
+              Moving past static network boundaries: issuing cryptographic workload identity tokens dynamically across ephemeral container pods.
+            </p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">By Cyber Defense Directorate</span>
+<a class="font-body-sm text-body-sm font-semibold text-secondary hover:underline" data-path="insights" href="#">Read Research →</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- =========================================================================
+       SECTION 11 — PARTNERSHIP / CTA BANNER
+       ========================================================================= -->
+<section class="w-full px-gutter-lg py-space-2xl bg-primary-container text-on-primary">
+<div class="max-w-7xl mx-auto rounded-2xl bg-primary p-space-2xl shadow-2xl relative overflow-hidden">
+<!-- Decorative geometric accents -->
+<div class="absolute -bottom-16 -right-16 w-80 h-80 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl space-y-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Initiate Engagement</span>
+<h2 class="font-headline-xl text-headline-xl font-bold text-pure-white tracking-tight">
+          Have an Idea Worth Building?
+        </h2>
+<p class="font-body-lg text-body-lg text-outline-variant leading-relaxed">
+          Whether you’re developing a new digital product, implementing mission-critical connected systems, or exploring corporate technology partnerships, let’s discuss how we can make it happen.
+        </p>
+<div class="pt-space-sm flex flex-wrap items-center gap-space-md">
+<a class="inline-flex items-center gap-space-xs px-space-xl py-3.5 rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm font-semibold hover:bg-on-secondary-container transition-all shadow-md" data-path="contact" href="#">
+<span>Contact Our Team</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-3.5 rounded-lg bg-surface-container-highest/10 hover:bg-surface-container-highest/20 text-pure-white font-body-sm text-body-sm font-semibold transition-colors" data-path="solutions" href="#">
+<span>Review Specifications</span>
+<span class="material-symbols-outlined text-[18px]">description</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Vanilla JS for Live Telemetry Micro-interaction -->
+<script>
+  (function initTelemetrySimulation() {
+    const container = document.getElementById('bar-chart-container');
+    const readingEl = document.getElementById('current-reading');
+    const toggleBtn = document.getElementById('toggle-stream-btn');
+    if (!container || !readingEl || !toggleBtn) return;
+
+    let isStreaming = true;
+    let timer = setInterval(updateData, 900);
+
+    function updateData() {
+      if (!isStreaming) return;
+      const bars = container.querySelectorAll('div');
+      bars.forEach((bar) => {
+        const h = Math.floor(Math.random() * 65) + 30;
+        bar.style.height = h + '%';
+      });
+      const psi = (138 + Math.random() * 10).toFixed(1);
+      const hz = (56 + Math.random() * 5).toFixed(1);
+      readingEl.textContent = `${psi} PSI • ${hz} Hz`;
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      isStreaming = !isStreaming;
+      toggleBtn.textContent = isStreaming ? 'Pause Ingest' : 'Resume Ingest';
+      toggleBtn.classList.toggle('bg-secondary', !isStreaming);
+    });
+  })();
+</script></main><footer class="w-full bg-primary-container text-on-primary border-t border-light-border/20"><div class="w-full px-gutter-lg py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-lg"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md font-bold tracking-tight text-pure-white">KAGAI</span><span class="font-label-sm text-label-sm text-steel-grey uppercase tracking-widest">Innovation Technology</span></div><p class="font-body-sm text-body-sm text-outline-variant max-w-sm">Engineering high-integrity corporate software, IoT ecosystems, cybersecurity infrastructure, and applied digital education across global enterprises.</p><div class="pt-space-sm space-y-space-xs"><p class="font-label-sm text-label-sm text-steel-grey uppercase">Registered Office</p><p class="font-body-sm text-body-sm text-pure-white">82 Innovation Way, Tech District, Level 4</p><p class="font-body-sm text-body-sm text-outline-variant">London • Singapore • Nairobi</p></div></div><div class="space-y-space-sm"><p class="font-label-md text-label-md uppercase tracking-wider text-pure-white font-semibold">Company</p><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="about-us" href="#">About KAGAI</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="leadership" href="#">Leadership &amp; Governance</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="careers" href="#">Careers &amp; Fellowships</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="insights" href="#">Research &amp; Insights</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="contact" href="#">Press &amp; Media</a></li></ul></div><div class="space-y-space-sm"><p class="font-label-md text-label-md uppercase tracking-wider text-pure-white font-semibold">Services &amp; Solutions</p><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="services" href="#">Enterprise Engineering</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="services" href="#">Cybersecurity Operations</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="solutions" href="#">Industrial IoT Architecture</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="solutions" href="#">Cloud Transformation</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="academy" href="#">Technical Advisory</a></li></ul></div><div class="space-y-space-sm"><p class="font-label-md text-label-md uppercase tracking-wider text-pure-white font-semibold">Learning &amp; Legal</p><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="academy" href="#">KAGAI Academy</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="client-portal" href="#">Student Portal</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="privacy-policy" href="#">Privacy Policy</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="terms-of-service" href="#">Terms of Service</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="compliance-iso" href="#">Compliance &amp; ISO 27001</a></li></ul></div></div><div class="mt-space-xl pt-space-lg border-t border-light-border/20 flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-label-sm text-label-sm text-steel-grey">© 2025 KAGAI Innovation Technology Ltd. All rights reserved.</p><div class="flex items-center gap-space-lg font-label-sm text-label-sm text-steel-grey"><a class="hover:text-pure-white transition-colors" data-path="privacy-policy" href="#">Privacy</a><a class="hover:text-pure-white transition-colors" data-path="terms-of-service" href="#">Terms</a><a class="hover:text-pure-white transition-colors" data-path="compliance-iso" href="#">ISO Certification</a><a class="hover:text-pure-white transition-colors" data-path="cookie-settings" href="#">Cookie Settings</a></div></div></div></footer></body></html>

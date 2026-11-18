@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700&amp;family=Space+Mono:wght@500&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "inverse-primary": "#b7c4fe",
+          "on-tertiary": "#ffffff",
+          "on-background": "#131c2a",
+          "on-primary-fixed": "#071747",
+          "primary-fixed-dim": "#b7c4fe",
+          "primary-fixed": "#dce1ff",
+          "outline-variant": "#c6c5d0",
+          "surface": "#f9f9ff",
+          "tertiary-fixed-dim": "#ffb598",
+          "steel-grey": "#737D8C",
+          "on-error": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "light-border": "#E1E5EB",
+          "tertiary": "#050100",
+          "surface-container-highest": "#dae3f7",
+          "outline": "#767680",
+          "on-primary-container": "#7582b7",
+          "surface-tint": "#4f5c8f",
+          "error": "#ba1a1a",
+          "surface-container-low": "#f0f3ff",
+          "background": "#f9f9ff",
+          "inverse-surface": "#283140",
+          "secondary-fixed-dim": "#ffb3b2",
+          "surface-bright": "#f9f9ff",
+          "on-primary": "#ffffff",
+          "tertiary-container": "#380f00",
+          "surface-container": "#e7eeff",
+          "on-tertiary-fixed": "#370e00",
+          "on-tertiary-container": "#b77458",
+          "surface-dim": "#d1daee",
+          "on-error-container": "#93000a",
+          "on-surface": "#131c2a",
+          "primary": "#000109",
+          "secondary": "#b71f31",
+          "primary-container": "#081848",
+          "secondary-fixed": "#ffdad8",
+          "surface-variant": "#dae3f7",
+          "on-secondary-fixed": "#410008",
+          "surface-container-high": "#dfe8fd",
+          "on-secondary": "#ffffff",
+          "inverse-on-surface": "#ecf1ff",
+          "on-tertiary-fixed-variant": "#6e3821",
+          "on-secondary-container": "#5b000f",
+          "error-container": "#ffdad6",
+          "pure-white": "#FFFFFF",
+          "tertiary-fixed": "#ffdbce",
+          "secondary-container": "#fd545e",
+          "soft-grey": "#F3F4F6",
+          "on-surface-variant": "#45464f",
+          "on-secondary-fixed-variant": "#92001e",
+          "on-primary-fixed-variant": "#374475"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-lg": "4rem",
+          "gutter-sm": "1rem",
+          "space-lg": "1.5rem",
+          "space-xs": "0.25rem",
+          "space-2xl": "4rem",
+          "margin": "2rem",
+          "margin-sm": "1rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem",
+          "gutter": "1.5rem",
+          "gutter-lg": "2rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "headline-xl-mobile": [
+            "Manrope"
+          ],
+          "headline-sm": [
+            "Manrope"
+          ],
+          "display-lg": [
+            "Manrope"
+          ],
+          "headline-md": [
+            "Manrope"
+          ],
+          "display-lg-mobile": [
+            "Manrope"
+          ],
+          "body-md": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Manrope"
+          ],
+          "label-sm": [
+            "Space Mono"
+          ],
+          "headline-xl": [
+            "Manrope"
+          ],
+          "label-md": [
+            "Space Mono"
+          ],
+          "body-sm": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "headline-xl-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-sm": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "fontWeight": "700"
+            }
+          ],
+          "body-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "28px",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "fontWeight": "700"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "fontWeight": "500"
+            }
+          ],
+          "body-sm": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-body-md text-on-surface min-h-screen"><header class="fixed top-0 left-0 right-0 z-50 bg-pure-white/95 backdrop-blur-md shadow-[0_8px_24px_-4px_rgba(8,24,72,0.06),0_2px_6px_-1px_rgba(8,24,72,0.04)]"><div class="bg-primary-container text-on-primary border-b border-light-border/20"><div class="w-full px-gutter-lg py-1.5 flex items-center justify-between font-label-sm text-label-sm uppercase tracking-wider"><span>New technical courses are now available in the KAGAI Academy • Explore our engineering solutions</span><button aria-label="Dismiss alert" class="flex items-center text-on-primary/70 hover:text-on-primary transition-colors"><span class="material-symbols-outlined text-[16px]">close</span></button></div></div><div class="h-20 w-full px-gutter-lg flex items-center justify-between border-b border-light-border"><div class="flex items-center gap-space-md"><img alt="Logo3.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDPE_5BZsLKOQ8iztW-2mYiB8R60lEsfjQ2KKGkK5-Fqg_bGumyq1lQw2wEPHhDUOdKHSoZX6RR8-0sCkJmhYCXZEfVvJn5KonzmQ0S2RSPDblIlCJpR-QxJZaxYrcvy2pYOKoDpjFFkVw_7F23f7bTabc6L5UYOsLmZo14FXXiSEPe6agrtOlf5NmnJ3biZnL44ckILAeHmcJVUwIw7XxY4oMAPdrsV0V7Wo75bgDVjxrqg8vuCNperg"/><a class="flex flex-col text-left" data-path="home" href="#"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary-container leading-none">KAGAI</span><span class="font-label-sm text-label-sm tracking-widest text-steel-grey uppercase">Innovation Technology</span></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-primary-container font-semibold border-b-2 border-secondary"><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="home" href="#">Home</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="about-us" href="#">About Us</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="services" href="#">Services</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="solutions" href="#">Solutions</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="academy" href="#">Academy</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="insights" href="#">Insights</a><a class="py-2 font-body-sm text-body-sm text-on-surface-variant hover:text-primary-container transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><button aria-label="Quick Search" class="p-2 text-on-surface-variant hover:text-primary-container hover:bg-soft-grey rounded-lg transition-colors"><span class="material-symbols-outlined">search</span></button><a class="hidden sm:inline-flex items-center font-label-md text-label-md uppercase tracking-wider px-space-md py-2 rounded-full bg-soft-grey text-on-surface-variant hover:bg-surface-container-high hover:text-primary-container border border-light-border transition-all" data-path="client-portal" href="#">Client Portal / Student Login</a><a class="inline-flex items-center font-body-sm text-body-sm font-semibold px-space-md py-2.5 rounded-lg bg-secondary text-on-secondary hover:bg-on-secondary-container transition-all shadow-[0_8px_24px_-4px_rgba(8,24,72,0.06)]" data-path="discuss-project" href="#">Let's Discuss Your Project</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-[116px] bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Editorial Header & Overview Banner -->
+<section class="w-full bg-surface-container-low px-gutter-lg py-space-2xl">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-end justify-between gap-space-lg">
+<div class="space-y-space-sm max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-steel-grey">KAGAI Applied Research Labs // Vol. 24</span>
+</div>
+<h1 class="font-display-lg text-display-lg font-bold text-primary tracking-tight">
+          Engineering Research, Architectural Notes &amp; Systems Insights
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant pt-space-xs">
+          Peer-reviewed explorations into distributed resilience, embedded protocols, deterministic AI, and zero-trust security architecture.
+        </p>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="flex items-center gap-space-lg bg-pure-white p-space-md rounded-xl shadow-sm">
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-steel-grey uppercase">Registered RFCs</p>
+<p class="font-headline-sm text-headline-sm font-bold text-primary-container">42</p>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-steel-grey uppercase">Peer Citations</p>
+<p class="font-headline-sm text-headline-sm font-bold text-primary-container">1.8k+</p>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-steel-grey uppercase">Open Standards</p>
+<p class="font-headline-sm text-headline-sm font-bold text-secondary">ISO/IEC</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Lead Paper / Research Spotlight (Asymmetrical Editorial Bento) -->
+<section class="w-full px-gutter-lg -mt-8">
+<div class="max-w-7xl mx-auto">
+<article class="bg-pure-white rounded-xl shadow-md overflow-hidden grid grid-cols-1 lg:grid-cols-12 transition-all">
+<!-- Visual Architecture Diagram Panel -->
+<div class="lg:col-span-5 relative bg-primary-container p-space-xl flex flex-col justify-between overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container via-primary-container to-surface-container-highest/20 pointer-events-none"></div>
+<!-- Abstract Mesh SVG Graphics -->
+<div class="relative z-10 space-y-space-md">
+<div class="flex items-center justify-between text-outline-variant font-label-sm text-label-sm">
+<span class="uppercase tracking-widest text-primary-fixed">Whitepaper Spotlight</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">DOI: 10.1042/kgi.sys.2025.04</span>
+</div>
+<div class="pt-4">
+<!-- Technical Topology Visual Representation -->
+<svg class="w-full h-44 text-primary-fixed-dim/80" fill="none" viewbox="0 0 380 180" xmlns="http://www.w3.org/2000/svg">
+<circle cx="60" cy="90" r="28" stroke="currentColor" stroke-dasharray="4 2" stroke-width="1.5"></circle>
+<circle cx="60" cy="90" fill="#b7c4fe" fill-opacity="0.2" r="14" stroke="#b7c4fe" stroke-width="1.5"></circle>
+<text fill="#ffffff" font-family="Space Mono" font-size="10" text-anchor="middle" x="60" y="94">EDGE-A</text>
+<circle cx="320" cy="50" r="24" stroke="currentColor" stroke-width="1.5"></circle>
+<circle cx="320" cy="50" fill="#fd545e" fill-opacity="0.3" r="10" stroke="#fd545e" stroke-width="1.5"></circle>
+<text fill="#ffffff" font-family="Space Mono" font-size="9" text-anchor="middle" x="320" y="54">EDGE-B</text>
+<circle cx="320" cy="130" r="24" stroke="currentColor" stroke-width="1.5"></circle>
+<circle cx="320" cy="130" fill="#b7c4fe" fill-opacity="0.2" r="10" stroke="#b7c4fe" stroke-width="1.5"></circle>
+<text fill="#ffffff" font-family="Space Mono" font-size="9" text-anchor="middle" x="320" y="134">EDGE-C</text>
+<path d="M88 90 C160 90, 200 50, 296 50" stroke="#b7c4fe" stroke-dasharray="6 3" stroke-width="1.5"></path>
+<path d="M88 90 C160 90, 200 130, 296 130" stroke="#b7c4fe" stroke-width="1.5"></path>
+<circle cx="190" cy="90" fill="#081848" r="18" stroke="#fd545e" stroke-width="1.5"></circle>
+<text fill="#fd545e" font-family="Space Mono" font-size="8" text-anchor="middle" x="190" y="93">RAFT</text>
+<text fill="#7582b7" font-family="Space Mono" font-size="9" text-anchor="middle" x="190" y="125">1.4ms SYNC</text>
+</svg>
+</div>
+</div>
+<div class="relative z-10 pt-space-lg">
+<div class="p-space-sm bg-surface-container-highest/10 rounded-lg backdrop-blur-sm">
+<p class="font-label-sm text-label-sm text-outline-variant uppercase">Benchmark Matrix</p>
+<p class="font-body-sm text-body-sm text-pure-white mt-1">99.999% Message Delivery Under 35% Synthetic Packet Loss</p>
+</div>
+</div>
+</div>
+<!-- Editorial Content Details -->
+<div class="lg:col-span-7 p-space-xl lg:p-space-2xl flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex flex-wrap items-center gap-space-sm">
+<span class="px-2.5 py-1 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+                Systems Architecture
+              </span>
+<span class="text-steel-grey font-label-sm text-label-sm">May 14, 2025</span>
+<span class="text-steel-grey">•</span>
+<span class="text-steel-grey font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">schedule</span> 14 min read
+              </span>
+</div>
+<h2 class="font-headline-xl text-headline-xl font-bold text-primary leading-tight tracking-tight">
+              Implementing Fault-Tolerant MQTT Clusters at Multi-Gigabit Scale: An Architectural Breakdown of State Synchronization Across Geographically Separated Edge Nodes
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              We present an empirical study and distributed consensus blueprint for operating ultra-high throughput telemetry brokers over uncurated wide-area connections. By combining ephemeral Raft election clusters with adaptive delta-state CRDT payloads, system recovery times drop below 120ms without broker partition splits.
+            </p>
+</div>
+<div class="pt-space-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary-container font-bold text-body-sm">
+                IL
+              </div>
+<div>
+<p class="font-body-sm text-body-sm font-semibold text-primary">Infrastructure Lab Team</p>
+<p class="font-label-sm text-label-sm text-steel-grey">Authored by Dr. N. Varma &amp; KAGAI Systems Core</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<button class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-space-md py-2.5 bg-primary-container text-on-primary rounded-lg font-body-sm text-body-sm font-semibold hover:bg-primary transition-all">
+<span>Read Whitepaper</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button aria-label="Download PDF" class="p-2.5 rounded-lg bg-soft-grey text-primary-container hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Interactive Filter & Taxonomy Navigation Bar -->
+<section class="w-full px-gutter-lg pt-space-2xl pb-space-lg">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-pure-white p-space-md rounded-xl shadow-sm">
+<!-- Category Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 lg:pb-0" id="filterPills">
+<button class="filter-pill active px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider transition-all whitespace-nowrap" data-filter="all">
+          All Publications
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-lg bg-soft-grey text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider transition-all whitespace-nowrap" data-filter="systems">
+          Systems Architecture
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-lg bg-soft-grey text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider transition-all whitespace-nowrap" data-filter="iot">
+          IoT &amp; Telemetry
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-lg bg-soft-grey text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider transition-all whitespace-nowrap" data-filter="security">
+          Security Research
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-lg bg-soft-grey text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider transition-all whitespace-nowrap" data-filter="ai">
+          Applied AI
+        </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-lg bg-soft-grey text-on-surface-variant hover:bg-surface-container-high font-label-md text-label-md uppercase tracking-wider transition-all whitespace-nowrap" data-filter="rfcs">
+          RFCs &amp; Benchmarks
+        </button>
+</div>
+<!-- Live Search & Sort -->
+<div class="flex items-center gap-space-sm min-w-[280px]">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-steel-grey text-[18px]">search</span>
+<input class="w-full bg-soft-grey pl-9 pr-3 py-2 rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-steel-grey focus:outline-none focus:bg-surface-container-high" id="searchInput" placeholder="Search papers, DOI, or keywords..." type="text"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Article Grid & Research Archive -->
+<section class="w-full px-gutter-lg pb-space-2xl">
+<div class="max-w-7xl mx-auto space-y-space-lg">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md font-bold text-primary">Archived &amp; Peer-Reviewed Releases</h3>
+<p class="font-label-sm text-label-sm text-steel-grey uppercase">Sorted by recency</p>
+</div>
+<!-- Bento Grid (3-column layout) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="publicationsGrid">
+<!-- Paper 1 -->
+<article class="paper-card bg-pure-white p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all" data-category="security">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm uppercase font-semibold">
+                Security Research
+              </span>
+<span class="font-label-sm text-label-sm text-steel-grey">12 min read</span>
+</div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-steel-grey">RFC-9122 // ZERO-TRUST</p>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary group-hover:text-primary-container transition-colors">
+                Zero-Trust Verification for Distributed Microservices via SPIFFE/SPIRE
+              </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Cryptographic workload attestation across hybrid bare-metal nodes and Kubernetes clusters without relying on brittle perimeter firewalls or static API credentials.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-light-border/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey">Published April 2025</span>
+<a class="font-body-sm text-body-sm font-semibold text-primary-container inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+              Review Findings <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Paper 2 -->
+<article class="paper-card bg-pure-white p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all" data-category="ai iot">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase font-semibold">
+                Applied AI &amp; IoT
+              </span>
+<span class="font-label-sm text-label-sm text-steel-grey">9 min read</span>
+</div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-steel-grey">DOI: 10.1042/kgi.ai.2025.12</p>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary group-hover:text-primary-container transition-colors">
+                Deterministic Inference at the Edge: Quantization Benchmarks on ARM Cortex-M
+              </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Evaluating FP8 vs INT4 precision degradation across embedded sensory telemetry. Demonstration of sub-15 milliwatt neural classification in continuous industrial monitoring.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-light-border/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey">Published April 2025</span>
+<a class="font-body-sm text-body-sm font-semibold text-primary-container inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+              Review Findings <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Paper 3 -->
+<article class="paper-card bg-pure-white p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all" data-category="systems">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase font-semibold">
+                Systems Architecture
+              </span>
+<span class="font-label-sm text-label-sm text-steel-grey">15 min read</span>
+</div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-steel-grey">BENCHMARK-SAT-08</p>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary group-hover:text-primary-container transition-colors">
+                Resilient Message Queues Under High-Jitter Satellite Backhaul
+              </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Evaluating pipeline preservation across LEO constellation handoffs. Optimizing ring-buffer persistency algorithms to mitigate 800ms packet jitter events without telemetry collapse.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-light-border/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey">Published March 2025</span>
+<a class="font-body-sm text-body-sm font-semibold text-primary-container inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+              Review Findings <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Paper 4 -->
+<article class="paper-card bg-pure-white p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all" data-category="iot rfcs">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container text-primary-container font-label-sm text-label-sm uppercase font-semibold">
+                Embedded Systems
+              </span>
+<span class="font-label-sm text-label-sm text-steel-grey">18 min read</span>
+</div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-steel-grey">SPEC-FORMAL-77</p>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary group-hover:text-primary-container transition-colors">
+                Formal Verification of State Machines in Mission-Critical Robotics
+              </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              Utilizing TLA+ specification validation to mathematically eliminate race conditions in dual-actuator surgical manipulators and heavy industrial robotics control loops.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-light-border/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey">Published March 2025</span>
+<a class="font-body-sm text-body-sm font-semibold text-primary-container inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+              Review Findings <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Paper 5 -->
+<article class="paper-card bg-pure-white p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all" data-category="security systems">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm uppercase font-semibold">
+                Software Engineering
+              </span>
+<span class="font-label-sm text-label-sm text-steel-grey">11 min read</span>
+</div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-steel-grey">EMPIRICAL STUDY // RUST-MIG</p>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary group-hover:text-primary-container transition-colors">
+                Preventing Memory Safety Vulnerabilities: Transitioning Enterprise C++ to Rust
+              </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              An institutional post-mortem on refactoring a high-frequency trading matching engine. Quantifying CVE reductions, developer velocity hurdles, and compiler guarantees.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-light-border/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey">Published February 2025</span>
+<a class="font-body-sm text-body-sm font-semibold text-primary-container inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+              Review Findings <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</article>
+<!-- Paper 6 / Special RFC Highlight -->
+<article class="paper-card bg-surface-container-high/50 p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:shadow-md transition-all" data-category="rfcs">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm uppercase font-semibold">
+                Standards &amp; RFC
+              </span>
+<span class="font-label-sm text-label-sm text-steel-grey">6 min read</span>
+</div>
+<div class="space-y-1">
+<p class="font-label-sm text-label-sm text-steel-grey">PROPOSED STANDARD // KGI-014</p>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary group-hover:text-primary-container transition-colors">
+                KAGAI High-Density Sensory Protocol (KHDS-1): Draft Specification
+              </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-3">
+              A compact binary framing protocol designed for sub-gigahertz telemetry radios operating under 2% duty cycle constraints with forward error correction.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-light-border/40 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey">Published January 2025</span>
+<a class="font-body-sm text-body-sm font-semibold text-primary-container inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform" href="#">
+              Read Draft <span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Lab Photo & Empirical Research Context -->
+<section class="w-full px-gutter-lg pb-space-2xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center bg-pure-white p-space-xl rounded-xl shadow-sm">
+<div class="lg:col-span-6 space-y-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Research Methodology</span>
+<h3 class="font-headline-lg text-headline-lg font-bold text-primary">
+          Hardware-in-the-loop Validation &amp; Real-Time Failure Injection
+        </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Our publications are backed by rigorous physical testbeds. The KAGAI Test Cluster encompasses 240 heterogeneous edge nodes running continuous stress scenarios, cosmic radiation parity simulations, and synthetic latency spikes.
+        </p>
+<div class="grid grid-cols-2 gap-space-md pt-space-xs">
+<div class="space-y-1">
+<p class="font-headline-sm text-headline-sm font-bold text-primary-container">12,000 hrs</p>
+<p class="font-label-sm text-label-sm text-steel-grey">Annual stress testing runtime</p>
+</div>
+<div class="space-y-1">
+<p class="font-headline-sm text-headline-sm font-bold text-primary-container">100% Open</p>
+<p class="font-label-sm text-label-sm text-steel-grey">Reproducible test scripts on Git</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="w-full h-80 rounded-lg overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A modern, high-tech server and embedded systems laboratory with engineers conducting hardware-in-the-loop tests. Clean aesthetic with subtle navy blue and crimson indicator lights on server racks, precise lab equipment, oscilloscopes, and clean white workstations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7zApcfmTPS_LxrAck_u5_V_vH_mkLnC3hU-Laf-TjNQsRKniGaR2f3W-tAMEjQkftd50-v_PK68FS5w2UeEKQSaSQclRRii892noBUdABARjEHVgh3K65t86ZHkz05T_QY1LWEz2oYBw_rdL27mz8cy64Lbt4ixFF72voCVUseFRBy0QBtaFXy-R2dTaqFBI2zPMUdtC_4OiQgrOi66ek31zwtvD0qtLC5sTKhuo"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Newsletter / Research Digest Subscription -->
+<section class="w-full bg-primary-container text-on-primary px-gutter-lg py-space-2xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 space-y-space-sm">
+<div class="flex items-center gap-space-sm text-primary-fixed">
+<span class="material-symbols-outlined text-[20px]">mark_email_unread</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Bi-Weekly Engineering Digest</span>
+</div>
+<h3 class="font-headline-xl text-headline-xl font-bold text-pure-white leading-tight">
+          Receive peer-reviewed findings, benchmarks, and architecture breakdowns directly.
+        </h3>
+<p class="font-body-md text-body-md text-outline-variant max-w-xl">
+          No promotional fluff. Strictly deep technical writeups, benchmark data, reproducible code samples, and upcoming RFC RFC drafts.
+        </p>
+</div>
+<div class="lg:col-span-5">
+<form class="space-y-space-sm bg-surface-container-highest/10 p-space-lg rounded-xl backdrop-blur-md" onsubmit="event.preventDefault(); alert('Subscribed to the KAGAI Engineering Digest.');">
+<label class="block font-label-sm text-label-sm text-pure-white uppercase">Corporate or Academic Email</label>
+<div class="flex flex-col sm:flex-row gap-space-xs">
+<input class="w-full px-space-md py-2.5 rounded-lg bg-pure-white text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="lead.architect@enterprise.com" required="" type="email"/>
+<button class="px-space-lg py-2.5 bg-secondary text-on-secondary hover:bg-secondary-container transition-all font-body-sm text-body-sm font-semibold rounded-lg whitespace-nowrap" type="submit">
+              Subscribe
+            </button>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed-dim">verified_user</span>
+<p class="font-label-sm text-label-sm text-primary-fixed-dim">Zero telemetry trackers. One-click unsubscribe at any time.</p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Contribution & Academic Partnership Note -->
+<section class="w-full px-gutter-lg py-space-2xl bg-surface">
+<div class="max-w-7xl mx-auto border-t border-light-border/60 pt-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+<div class="space-y-space-xs max-w-2xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-steel-grey font-semibold">Academic Partnerships &amp; Grants</span>
+<h4 class="font-headline-sm text-headline-sm font-bold text-primary">Collaborate with KAGAI Research Labs</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          We sponsor Ph.D. fellowships, provide compute/testbed access to accredited universities, and co-author applied engineering papers. Submit technical proposals or inquire about our peer-review symposiums.
+        </p>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center gap-2 px-space-lg py-2.5 bg-soft-grey text-primary-container hover:bg-surface-container-high rounded-lg font-body-sm text-body-sm font-semibold transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">school</span>
+<span>Academic Portal</span>
+</a>
+<a class="inline-flex items-center gap-2 px-space-lg py-2.5 bg-primary-container text-on-primary hover:bg-primary rounded-lg font-body-sm text-body-sm font-semibold transition-all" href="#">
+<span>Submit a Paper</span>
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Client-side Search and Filter Interaction -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const pills = document.querySelectorAll('.filter-pill');
+      const cards = document.querySelectorAll('.paper-card');
+      const searchInput = document.getElementById('searchInput');
+
+      let currentFilter = 'all';
+      let currentQuery = '';
+
+      function filterItems() {
+        cards.forEach(card => {
+          const categories = card.getAttribute('data-category') || '';
+          const textContent = card.innerText.toLowerCase();
+          
+          const matchesCategory = currentFilter === 'all' || categories.includes(currentFilter);
+          const matchesSearch = !currentQuery || textContent.includes(currentQuery);
+
+          if (matchesCategory && matchesSearch) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      pills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          pills.forEach(p => {
+            p.classList.remove('bg-primary-container', 'text-on-primary');
+            p.classList.add('bg-soft-grey', 'text-on-surface-variant');
+          });
+          pill.classList.remove('bg-soft-grey', 'text-on-surface-variant');
+          pill.classList.add('bg-primary-container', 'text-on-primary');
+
+          currentFilter = pill.getAttribute('data-filter');
+          filterItems();
+        });
+      });
+
+      searchInput?.addEventListener('input', (e) => {
+        currentQuery = e.target.value.toLowerCase().trim();
+        filterItems();
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-primary-container text-on-primary border-t border-light-border/20"><div class="w-full px-gutter-lg py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter-lg"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md font-bold tracking-tight text-pure-white">KAGAI</span><span class="font-label-sm text-label-sm text-steel-grey uppercase tracking-widest">Innovation Technology</span></div><p class="font-body-sm text-body-sm text-outline-variant max-w-sm">Engineering high-integrity corporate software, IoT ecosystems, cybersecurity infrastructure, and applied digital education across global enterprises.</p><div class="pt-space-sm space-y-space-xs"><p class="font-label-sm text-label-sm text-steel-grey uppercase">Registered Office</p><p class="font-body-sm text-body-sm text-pure-white">82 Innovation Way, Tech District, Level 4</p><p class="font-body-sm text-body-sm text-outline-variant">London • Singapore • Nairobi</p></div></div><div class="space-y-space-sm"><p class="font-label-md text-label-md uppercase tracking-wider text-pure-white font-semibold">Company</p><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="about-us" href="#">About KAGAI</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="leadership" href="#">Leadership &amp; Governance</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="careers" href="#">Careers &amp; Fellowships</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="insights" href="#">Research &amp; Insights</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="contact" href="#">Press &amp; Media</a></li></ul></div><div class="space-y-space-sm"><p class="font-label-md text-label-md uppercase tracking-wider text-pure-white font-semibold">Services &amp; Solutions</p><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="services" href="#">Enterprise Engineering</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="services" href="#">Cybersecurity Operations</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="solutions" href="#">Industrial IoT Architecture</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="solutions" href="#">Cloud Transformation</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="academy" href="#">Technical Advisory</a></li></ul></div><div class="space-y-space-sm"><p class="font-label-md text-label-md uppercase tracking-wider text-pure-white font-semibold">Learning &amp; Legal</p><ul class="space-y-space-xs font-body-sm text-body-sm"><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="academy" href="#">KAGAI Academy</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="client-portal" href="#">Student Portal</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="privacy-policy" href="#">Privacy Policy</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="terms-of-service" href="#">Terms of Service</a></li><li class="text-outline-variant hover:text-pure-white transition-colors"><a data-path="compliance-iso" href="#">Compliance &amp; ISO 27001</a></li></ul></div></div><div class="mt-space-xl pt-space-lg border-t border-light-border/20 flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-label-sm text-label-sm text-steel-grey">© 2025 KAGAI Innovation Technology Ltd. All rights reserved.</p><div class="flex items-center gap-space-lg font-label-sm text-label-sm text-steel-grey"><a class="hover:text-pure-white transition-colors" data-path="privacy-policy" href="#">Privacy</a><a class="hover:text-pure-white transition-colors" data-path="terms-of-service" href="#">Terms</a><a class="hover:text-pure-white transition-colors" data-path="compliance-iso" href="#">ISO Certification</a><a class="hover:text-pure-white transition-colors" data-path="cookie-settings" href="#">Cookie Settings</a></div></div></div></footer></body></html>

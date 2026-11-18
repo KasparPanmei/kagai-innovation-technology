@@ -1,0 +1,21 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.local.example
+!.env.atlas.example
+
+# Dependencies
+node_modules/
+
+# Build files
+dist/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db

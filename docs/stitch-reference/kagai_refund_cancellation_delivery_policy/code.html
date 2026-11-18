@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;family=Space+Mono:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-tertiary-container":"#b77458","surface-bright":"#f9f9ff","on-error":"#ffffff","on-primary-fixed":"#071747","surface-tint":"#4f5c8f","on-tertiary-fixed":"#370e00","on-secondary-fixed":"#410008","tertiary-fixed":"#ffdbce","background":"#f9f9ff","secondary":"#b71f31","inverse-primary":"#b7c4fe","on-background":"#131c2a","on-tertiary-fixed-variant":"#6e3821","tertiary-container":"#380f00","surface-dim":"#d1daee","on-surface":"#131c2a","surface-variant":"#dae3f7","tertiary":"#050100","pure-white":"#FFFFFF","outline-variant":"#c6c5d0","on-primary":"#ffffff","on-error-container":"#93000a","surface-container-lowest":"#ffffff","secondary-fixed":"#ffdad8","inverse-on-surface":"#ecf1ff","on-secondary-fixed-variant":"#92001e","on-secondary":"#ffffff","on-tertiary":"#ffffff","primary-fixed-dim":"#b7c4fe","surface-container-high":"#dfe8fd","surface-container-low":"#f0f3ff","inverse-surface":"#283140","light-border":"#E1E5EB","primary-container":"#081848","on-primary-container":"#7582b7","surface-container":"#e7eeff","on-surface-variant":"#45464f","error":"#ba1a1a","on-secondary-container":"#5b000f","tertiary-fixed-dim":"#ffb598","steel-grey":"#737D8C","error-container":"#ffdad6","on-primary-fixed-variant":"#374475","primary-fixed":"#dce1ff","soft-grey":"#F3F4F6","surface":"#f9f9ff","outline":"#767680","surface-container-highest":"#dae3f7","primary":"#000109","secondary-fixed-dim":"#ffb3b2","secondary-container":"#fd545e"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-lg":"4rem","margin":"2rem","gutter-lg":"2rem","gutter":"1.5rem","space-2xl":"4rem","margin-sm":"1rem","gutter-sm":"1rem","space-xs":"0.25rem","space-md":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","space-lg":"1.5rem"},"fontFamily":{"display-lg-mobile":["Manrope"],"label-md":["Space Mono"],"body-md":["Inter"],"display-lg":["Manrope"],"body-sm":["Inter"],"headline-sm":["Manrope"],"body-lg":["Inter"],"headline-xl":["Manrope"],"label-sm":["Space Mono"],"headline-lg":["Manrope"],"headline-xl-mobile":["Manrope"],"headline-md":["Manrope"]},"fontSize":{"display-lg-mobile":["36px",{"lineHeight":"44px","fontWeight":"700"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","fontWeight":"700"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"16px","fontWeight":"500"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"600"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-pure-white/95 backdrop-blur-md shadow-[0_1px_8px_rgba(8,24,72,0.06)]"><div class="w-full bg-primary-container text-on-primary px-margin-sm lg:px-margin-lg py-space-xs flex items-center justify-between transition-all duration-300" id="top-announcement-bar"><div class="flex-1 text-center"><p class="font-label-sm text-label-sm tracking-wider uppercase text-on-primary"><span class="inline-block w-2 h-2 rounded-full bg-secondary-container mr-2 align-middle"></span>NEW TECHNICAL COURSES ARE NOW AVAILABLE IN THE KAGAI ACADEMY • EXPLORE OUR ENGINEERING SOLUTIONS</p></div><button aria-label="Close announcement" class="text-on-primary hover:text-secondary-fixed transition-colors flex items-center justify-center p-space-xs" onclick="document.getElementById('top-announcement-bar').style.display='none'"><span class="material-symbols-outlined text-[16px]">close</span></button></div><div class="h-20 w-full px-margin-sm lg:px-margin-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><img alt="Logo3.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDPE_5BZsLKOQ8iztW-2mYiB8R60lEsfjQ2KKGkK5-Fqg_bGumyq1lQw2wEPHhDUOdKHSoZX6RR8-0sCkJmhYCXZEfVvJn5KonzmQ0S2RSPDblIlCJpR-QxJZaxYrcvy2pYOKoDpjFFkVw_7F23f7bTabc6L5UYOsLmZo14FXXiSEPe6agrtOlf5NmnJ3biZnL44ckILAeHmcJVUwIw7XxY4oMAPdrsV0V7Wo75bgDVjxrqg8vuCNperg"/><a class="flex flex-col" data-path="home" href="#"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary-container leading-none">KAGAI</span><span class="font-label-sm text-label-sm tracking-widest text-steel-grey uppercase">Innovation Technology</span></a></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-secondary font-semibold"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#">Home</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="about-us" href="#">About Us</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="services" href="#">Services</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="solutions" href="#">Solutions</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="academy" href="#">Academy</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="insights" href="#">Insights</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-sm sm:gap-space-md shrink-0"><button aria-label="Search" class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-soft-grey hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><a class="hidden md:inline-flex items-center px-space-md py-space-xs rounded-lg font-body-sm text-body-sm text-on-surface hover:text-primary-container hover:bg-soft-grey transition-colors" data-path="auth" href="#">Client &amp; Student Portal</a><a class="inline-flex items-center px-space-md py-space-sm rounded-lg bg-secondary text-on-secondary font-body-sm text-body-sm tracking-wide hover:bg-on-secondary-fixed-variant transition-colors shadow-[0_2px_6px_-1px_rgba(8,24,72,0.08)]" data-path="contact" href="#">Let's Discuss Your Project</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]"><div class="flex flex-col w-full">
+<!-- Top Document Reference & Audit Metadata Strip -->
+<section class="w-full bg-surface-container-low py-space-sm px-margin-sm lg:px-margin-lg">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-space-xs text-steel-grey font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="text-on-surface font-semibold tracking-wider">LEGAL REPOSITORY</span>
+<span>//</span>
+<span>COMMERCIAL GOVERNANCE</span>
+<span>//</span>
+<span class="text-secondary font-mono tracking-widest font-semibold">REF: KAGAI-FIN-REF-2025.1</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="inline-flex items-center gap-1.5 text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          ACTIVE POLICY (REV 4.2)
+        </span>
+<span class="text-outline-variant">|</span>
+<span>EFFECTIVE: JAN 15, 2025</span>
+</div>
+</div>
+</section>
+<!-- Editorial Hero Header Block -->
+<section class="w-full bg-surface px-margin-sm lg:px-margin-lg py-space-xl lg:py-space-2xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-lg">
+<!-- Statutory Compliance Status Chip -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm tracking-wide">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>COMPLIANT: CONSUMER PROTECTION ACT 2019 (E-COMMERCE)</span>
+</div>
+<div class="inline-flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high rounded text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-steel-grey">gavel</span>
+<span>GLOBAL DISTANCE SELLING REGULATIONS (UK / EU / APAC)</span>
+</div>
+</div>
+<!-- Main Titles with Architectural Editorial Balance -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-end">
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<h1 class="font-headline-xl text-headline-xl text-primary-container tracking-tight">
+            Refund, Cancellation &amp; Digital Delivery Policy
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+            Clear, transparent commercial parameters regarding Academy technical cohorts, private corporate upskilling programs, architectural retainer cancellations, and digital delivery SLAs.
+          </p>
+</div>
+<div class="lg:col-span-4 flex flex-col justify-end lg:items-end">
+<div class="w-full bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase">Billing Desk SLA</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary-container font-semibold">&lt; 4 Hours</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Direct commercial escalation line for enterprise accounts and registered fellows.</p>
+<div class="pt-space-xs flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>TEL: +44 (0) 20 7946 0912</span>
+<span class="text-secondary font-medium">billing@kagai.com</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Index Navigator -->
+<section class="w-full bg-surface-container-low py-space-sm px-margin-sm lg:px-margin-lg sticky top-20 z-40 shadow-[0_4px_12px_rgba(8,24,72,0.03)] backdrop-blur-md">
+<div class="max-w-7xl mx-auto flex items-center gap-space-md overflow-x-auto no-scrollbar">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase shrink-0 font-semibold">Jump to clause:</span>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-secondary whitespace-nowrap transition-colors" href="#academy-policy">01. Academy Educational Programs</a>
+<span class="text-outline-variant">•</span>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-secondary whitespace-nowrap transition-colors" href="#enterprise-retainers">02. Engineering &amp; Architectural Retainers</a>
+<span class="text-outline-variant">•</span>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-secondary whitespace-nowrap transition-colors" href="#digital-delivery">03. Digital Delivery SLAs</a>
+<span class="text-outline-variant">•</span>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-secondary whitespace-nowrap transition-colors" href="#processing-timelines">04. Statutory Processing Timelines</a>
+<span class="text-outline-variant">•</span>
+<a class="font-body-sm text-body-sm text-on-surface hover:text-secondary whitespace-nowrap transition-colors" href="#dispute-arbitration">05. Commercial Disputes &amp; FAQs</a>
+</div>
+</section>
+<!-- Main Policy Content Area -->
+<main class="w-full bg-surface px-margin-sm lg:px-margin-lg py-space-2xl">
+<div class="max-w-7xl mx-auto flex flex-col gap-space-2xl">
+<!-- SECTION 01: KAGAI ACADEMY EDUCATIONAL PROGRAMS -->
+<section class="scroll-mt-36 flex flex-col gap-space-lg" id="academy-policy">
+<div class="flex items-center gap-space-md pb-space-xs">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded bg-primary-container text-on-primary font-mono">CLAUSE 01</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">KAGAI Academy Educational Programs</h2>
+<p class="font-body-sm text-body-sm text-steel-grey">Applies to individual technical cohort enrollments, accelerated bootcamps, and corporate cohort seat reservations.</p>
+</div>
+</div>
+<!-- 4-Card Asymmetric Policy Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg">
+<!-- Card 1: 14-Day Cooling Off Period -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between gap-space-md relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">timelapse</span>
+</div>
+<span class="px-2.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary font-semibold">100% REIMBURSEMENT</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">14-Day Cohort Cooling-Off Period</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Registered fellows may cancel their cohort placement within 14 calendar days of payment or until 48 hours prior to live instruction commencement—whichever occurs first—for a complete, unconditionally executed refund.
+              </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Full guarantee ceases immediately upon the manual provisioning of virtualized hardware cloud cluster credentials and live week 2 laboratory execution.
+              </p>
+</div>
+</div>
+<!-- Card 2: Prorated Course Adjustments -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div class="flex items-start justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">pie_chart</span>
+</div>
+<span class="px-2.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary-container font-semibold">TERMS CREDIT</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Prorated Week 2–4 Term Credits</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+                Voluntary withdrawals communicated between Week 2 and the conclusion of Week 4 are ineligible for direct cash refunds but qualify for a 65% unconsumed tuition credit applicable to any subsequent cohort intake within 12 months.
+              </p>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-steel-grey text-[18px] shrink-0 mt-0.5">account_balance_wallet</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                Credits remain tied to the registered individual or can be reassigned across enterprise team rosters with written corporate authorization.
+              </p>
+</div>
+</div>
+<!-- Card 3: Non-Refundable Components -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">do_not_disturb_on</span>
+</div>
+<span class="font-label-sm text-label-sm text-steel-grey font-mono uppercase">EXCLUSION CODES: NR-HW-01 &amp; NR-EX-02</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Strictly Non-Refundable Components</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-md">
+                Certain specialized elements represent consumed intellectual property, transit costs, or dedicated physical silicon hardware which cannot be refunded once dispatched or administered:
+              </p>
+<ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface">
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span><strong>Physical Evaluation Hardware:</strong> ARM Cortex, RISC-V, and FPGA developer kits once tamper-evident transit seals are broken.</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span><strong>Defensible Capstone Examination Fees:</strong> Third-party proctoring allocations and academic assessment panel stipends.</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0"></span>
+<span><strong>Dedicated Sandbox Instances:</strong> Dedicated AWS/GCP GPU cluster compute allocated exclusively to fellowship accounts.</span>
+</li>
+</ul>
+</div>
+<div class="font-label-sm text-label-sm text-steel-grey border-t border-transparent pt-space-xs">
+              Hardware kits returned in unopened, original factory-sealed condition within 14 days incur a standard 15% restocking fee.
+            </div>
+</div>
+<!-- Card 4: Student Deferral Rights -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col justify-between gap-space-md">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container mb-space-sm">
+<span class="material-symbols-outlined text-[24px]">event_repeat</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-space-xs">Student Deferral Privileges</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed mb-space-sm">
+                Enrolled fellows encounter unexpected corporate milestones or personal emergencies. KAGAI grants every fellow a unilateral, no-penalty one-time cohort deferral.
+              </p>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Qualifying Criteria:</span>
+<span>• Formal notice submitted prior to Week 4 live lab session.</span>
+<span>• Medical certification or signed enterprise supervisor note.</span>
+<span>• Guaranteed placement in any term starting within 180 days.</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-steel-grey">Subsequent secondary deferrals incur an administrative rescheduling levy of $250 USD.</span>
+</div>
+</div>
+</section>
+<!-- SECTION 02: ENTERPRISE ARCHITECTURAL RETAINERS -->
+<section class="scroll-mt-36 flex flex-col gap-space-lg" id="enterprise-retainers">
+<div class="flex items-center gap-space-md pb-space-xs">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded bg-primary-container text-on-primary font-mono">CLAUSE 02</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Enterprise Engineering &amp; Architectural Retainers</h2>
+<p class="font-body-sm text-body-sm text-steel-grey">Governing Statement of Work (SOW) milestone agreements, embedded IoT firmware prototyping, and dedicated solution retainers.</p>
+</div>
+</div>
+<!-- SOW Framework Matrix -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg lg:p-space-xl flex flex-col gap-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Stage 01 Matrix Column -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase font-semibold">STAGE 01</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary-container font-semibold">DISCOVERY / RFC</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary-container">Architectural Discovery Cancellation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Clients may cancel discovery contracts upon 7 business days written notice. Payments are billed strictly for consumed engineering hours at standard advisory rates. Unused portions of initial engagement deposits are returned in full.
+              </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-secondary font-medium">
+                Artifact Handover: Partial whitepapers &amp; architecture drafts supplied as-is.
+              </div>
+</div>
+<!-- Stage 02 Matrix Column -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase font-semibold">STAGE 02</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary-container font-semibold">PROTOTYPING / SOW</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary-container">Milestone-Based Project SOWs</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Work completed under signed milestone definitions is deemed definitive upon acceptance testing sign-off. Milestone disbursements are non-refundable once engineering milestones are certified by the client technical lead.
+              </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-on-surface font-medium">
+                In-Progress Milestones: Prorated on auditable Jira sprint velocity burndown.
+              </div>
+</div>
+<!-- Stage 03 Matrix Column -->
+<div class="flex flex-col gap-space-sm bg-surface-container-low p-space-md rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-steel-grey uppercase font-semibold">STAGE 03</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-primary-container font-semibold">ADVISORY RETAINER</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-primary-container">Ongoing Retainer Termination</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Monthly advisory and DevSecOps retainers require a standard 30-day bilateral notification period. Retainer hours do not roll over across quarters unless specifically executed under an Enterprise Master Service Agreement (MSA).
+              </p>
+<div class="mt-auto pt-space-xs font-label-sm text-label-sm text-steel-grey font-medium">
+                Advance Billing: Pro-rated credits applied to mutual closing statements.
+              </div>
+</div>
+</div>
+<!-- Enterprise Engineering Table View -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="bg-surface-container text-primary-container font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-space-sm px-space-md rounded-l">Service Category</th>
+<th class="py-space-sm px-space-md">Standard Notice Period</th>
+<th class="py-space-sm px-space-md">Refund Liability Threshold</th>
+<th class="py-space-sm px-space-md rounded-r">Deliverable IP Ownership</th>
+</tr>
+</thead>
+<tbody class="text-on-surface-variant">
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-medium text-on-surface">Time &amp; Materials Engineering</td>
+<td class="py-space-sm px-space-md">5 Business Days</td>
+<td class="py-space-sm px-space-md">Unbilled hours refunded / reconciled</td>
+<td class="py-space-sm px-space-md">Transfers upon settlement of hours</td>
+</tr>
+<tr class="bg-surface-container-low hover:bg-surface-container transition-colors">
+<td class="py-space-sm px-space-md font-medium text-on-surface">Fixed-Bid Firmware / SOW</td>
+<td class="py-space-sm px-space-md">14 Business Days</td>
+<td class="py-space-sm px-space-md">Uncommenced stages 100% refundable</td>
+<td class="py-space-sm px-space-md">Transfers for completed milestones</td>
+</tr>
+<tr class="bg-surface-container-lowest hover:bg-surface-container-low transition-colors">
+<td class="py-space-sm px-space-md font-medium text-on-surface">Custom Silicon / Hardware Prototyping</td>
+<td class="py-space-sm px-space-md">Immediate freeze</td>
+<td class="py-space-sm px-space-md">Non-refundable once PCB fabrication submitted</td>
+<td class="py-space-sm px-space-md">Physical boards delivered as manufactured</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- SECTION 03: DIGITAL DELIVERY POLICIES & SLAS -->
+<section class="scroll-mt-36 flex flex-col gap-space-lg" id="digital-delivery">
+<div class="flex items-center gap-space-md pb-space-xs">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded bg-primary-container text-on-primary font-mono">CLAUSE 03</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Digital Delivery Standards &amp; Handover SLAs</h2>
+<p class="font-body-sm text-body-sm text-steel-grey">Protocol parameters regulating code delivery, credentials, documentation, and digital instructional materials.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg">
+<!-- Left: SLA Matrix -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-md">
+<h3 class="font-headline-sm text-headline-sm text-primary-container">Guaranteed Digital Handover Timelines</h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Upon successful milestone payment verification, KAGAI Innovation Technology commits to strict delivery service level agreements (SLAs) for digital artifacts and systems:
+            </p>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-sm pt-space-xs">
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Immediate / Instant</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-mono">0–2 HRS</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">LMS access keys, LMS portal dashboards, and digital courseware syllabus downloads.</p>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Standard Provision</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-mono">24 HRS</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Git repository transfer, signed GPG tags, RFC specification documentation, and architectural diagrams.</p>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-lg flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">Hardware Cloud</span>
+<span class="font-headline-sm text-headline-sm text-primary-container font-mono">48 HRS</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Isolated lab pod container spinning, dedicated FPGA simulation access, and VPN tunnel credentials.</p>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex items-start gap-space-sm mt-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px] shrink-0 mt-0.5">verified</span>
+<div>
+<h4 class="font-body-md text-body-md font-semibold text-primary-container">Digital Verification of Receipt</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Delivery is digitally timestamped via our secure client portal logs or cryptographic Git commit provenance signatures. If access is impeded by network technicalities, delivery timeline tolls pause until full connectivity is restored by KAGAI DevOps.
+                </p>
+</div>
+</div>
+</div>
+<!-- Right: Visual Identity / Delivery Assurance -->
+<div class="lg:col-span-4 bg-primary-container text-on-primary p-space-xl rounded-xl shadow-sm flex flex-col justify-between gap-space-lg relative overflow-hidden">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-primary-container">INTEGRITY CERTIFICATE</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Cryptographic Artifact Verification</h3>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim leading-relaxed">
+                All delivered enterprise codebase tarballs and Academy micro-credentials incorporate SHA-256 checksums cross-referenced on the client invoice summary to guarantee tamper-free delivery.
+              </p>
+</div>
+<!-- Visual Metric & Graphic -->
+<div class="p-space-md bg-surface-variant/10 rounded-lg flex flex-col gap-space-xs backdrop-blur-sm">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-primary-fixed-dim">SLA Fulfillment Rate (2024–2025)</span>
+<span class="text-on-primary font-bold">99.82%</span>
+</div>
+<div class="w-full bg-surface-variant/20 rounded-full h-1.5 overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full w-[99.82%]"></div>
+</div>
+<span class="text-[10px] text-primary-fixed-dim font-mono tracking-widest pt-1">AUDITED BY ENTERPRISE TRUST DESK</span>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<img alt="KAGAI Technology Seal" class="h-6 w-auto object-contain brightness-200" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVcDrZQvYXzKvdG3NSKzi1dHVE7eB8oTe86iZBQwZmurwsO5umgz4xqWV0ZyYr_VRIGQGeLCmOA9n_Lyu_6k3z-D2efOja7T6aXxFgcWhMD4SS7LqzxzLCVVG93aZDDE2V-zXY-OtMlfBDyQA8eWek4m0lQoK-aB65ts68KQxU786LNuilmxr1wd3XfUDLfiVMtVWtKQZW75yeI18n-zC7kcUHU5fkbZ-ZQ2dqvjpK6Tc9d_xOagsZ"/>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-wider">KAGAI INFRASTRUCTURE ASSURANCE</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 04: STEP-BY-STEP REFUND REQUEST & TIMELINES -->
+<section class="scroll-mt-36 flex flex-col gap-space-lg" id="processing-timelines">
+<div class="flex items-center gap-space-md pb-space-xs">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded bg-primary-container text-on-primary font-mono">CLAUSE 04</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Refund Processing Protocol &amp; Statutory Timelines</h2>
+<p class="font-body-sm text-body-sm text-steel-grey">Structured three-step submission and settlement protocol for banking adjustments, card credits, and GST tax credit notes.</p>
+</div>
+</div>
+<!-- 3-Phase Process Architecture -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg">
+<!-- Phase 1 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-md relative">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container font-mono text-primary-container font-semibold">PHASE 01</span>
+<span class="material-symbols-outlined text-steel-grey text-[20px]">drafts</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-1">Formal Submission</h3>
+<span class="font-label-sm text-label-sm text-secondary font-mono">T + 0 to 48 HOURS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Requests must be dispatched electronically via <span class="font-mono text-on-surface font-medium">billing@kagai.com</span> or logged directly under the "Commercial Billing" tab of the Client &amp; Student Portal.
+            </p>
+<div class="mt-auto bg-surface-container-low p-space-sm rounded font-body-sm text-body-sm text-on-surface flex flex-col gap-1">
+<span class="font-semibold text-primary-container">Required Data Elements:</span>
+<span>1. Valid Invoice Reference ID (KG-INV-XXXX)</span>
+<span>2. Associated Organization / Learner Email</span>
+<span>3. Specific substantive grounds for refund</span>
+</div>
+</div>
+<!-- Phase 2 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-md relative">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container font-mono text-primary-container font-semibold">PHASE 02</span>
+<span class="material-symbols-outlined text-steel-grey text-[20px]">fact_check</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-1">Audit &amp; Validation</h3>
+<span class="font-label-sm text-label-sm text-secondary font-mono">2 TO 3 BUSINESS DAYS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Our financial controller conducts entitlement audits against LMS digital activity timestamps, hardware kit transit manifests, and executed SOW sprint sign-offs.
+            </p>
+<div class="mt-auto bg-surface-container-low p-space-sm rounded font-body-sm text-body-sm text-on-surface flex flex-col gap-1">
+<span class="font-semibold text-primary-container">Verification Gateways:</span>
+<span>• Zero hardware seal integrity breach.</span>
+<span>• SOW hour consumption reconciliation.</span>
+<span>• Determination of Cash vs. Credit allocation.</span>
+</div>
+</div>
+<!-- Phase 3 -->
+<div class="bg-surface-container-lowest p-space-xl rounded-xl shadow-sm flex flex-col gap-space-md relative">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container font-mono text-primary-container font-semibold">PHASE 03</span>
+<span class="material-symbols-outlined text-steel-grey text-[20px]">currency_exchange</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary-container mb-1">Execution &amp; Settlement</h3>
+<span class="font-label-sm text-label-sm text-secondary font-mono">5 TO 7 BUSINESS DAYS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Approved funds are remitted strictly back to the source payment method (card, direct bank wire, or payment gateway). A formal credit note is issued with adjusted GST/VAT calculations.
+            </p>
+<div class="mt-auto bg-surface-container-low p-space-sm rounded font-body-sm text-body-sm text-on-surface flex flex-col gap-1">
+<span class="font-semibold text-primary-container">Settlement Windows:</span>
+<span>• Merchant Gateways: 48 to 72 hours</span>
+<span>• Corporate Wire Transfers: 3 to 5 banking days</span>
+<span>• International Swift Wires: 5 to 7 business days</span>
+</div>
+</div>
+</div>
+<!-- Fraud Prevention & Chargeback Protocols Notice -->
+<div class="bg-surface-container-low p-space-lg rounded-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md max-w-3xl">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center shrink-0 text-secondary">
+<span class="material-symbols-outlined text-[20px]">shield</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-primary-container">Chargeback Mitigation &amp; Duplicate Charge Protocol</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                If an unintentional duplicate charge or currency mismatch occurs, please notify Billing Support immediately prior to lodging an institutional bank chargeback. Direct cancellations prevent automatic student profile suspensions and merchant dispute holds.
+              </p>
+</div>
+</div>
+<a class="shrink-0 px-space-md py-space-sm rounded bg-primary-container text-on-primary font-body-sm text-body-sm hover:bg-primary transition-colors flex items-center gap-space-xs" href="#billing-contact-panel">
+<span>Escalate To Desk</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- SECTION 05: INTERACTIVE COMMERCIAL FAQ ACCORDION -->
+<section class="scroll-mt-36 flex flex-col gap-space-lg" id="dispute-arbitration">
+<div class="flex items-center gap-space-md pb-space-xs">
+<span class="font-label-md text-label-md px-2.5 py-1 rounded bg-primary-container text-on-primary font-mono">CLAUSE 05</span>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Frequently Asked Commercial Questions</h2>
+<p class="font-body-sm text-body-sm text-steel-grey">Instant clarification regarding common operational, tax, seat transfer, and scheduling exceptions.</p>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm" id="faq-container">
+<!-- Accordion Item 1 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200">
+<button class="faq-toggle w-full p-space-lg text-left flex items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary-container">What occurs if a live Academy lecture or hardware lab session is rescheduled by KAGAI?</span>
+<span class="material-symbols-outlined text-steel-grey text-[24px] transform transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg pt-0 text-on-surface-variant font-body-md text-body-md">
+<p class="leading-relaxed">
+                If an instructional session is postponed due to lead engineer unavailability or lab maintenance, it is rescheduled at a consensus cohort time with 72 hours notice. Additionally, full HD archived recordings and supplemental mentor Q&amp;A sessions are furnished. Rescheduling does not constitute grounds for tuition refunds if equivalent instructional time is fulfilled within the cohort window.
+              </p>
+</div>
+</div>
+<!-- Accordion Item 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200">
+<button class="faq-toggle w-full p-space-lg text-left flex items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary-container">Can reserved enterprise cohort seats be transferred to alternate engineers within our organization?</span>
+<span class="material-symbols-outlined text-steel-grey text-[24px] transform transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg pt-0 text-on-surface-variant font-body-md text-body-md">
+<p class="leading-relaxed">
+                Yes. Enterprise enterprise corporate seat transfers are permitted at zero administrative fee up to 48 hours prior to Cohort Day 01. After Week 1 has commenced, a seat substitution incurs a nominal $150 USD administrative credentialing and lab provisioning re-licensing charge.
+              </p>
+</div>
+</div>
+<!-- Accordion Item 3 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200">
+<button class="faq-toggle w-full p-space-lg text-left flex items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary-container">How are GST, VAT, and international withholding taxes handled on issued Credit Notes?</span>
+<span class="material-symbols-outlined text-steel-grey text-[24px] transform transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg pt-0 text-on-surface-variant font-body-md text-body-md">
+<p class="leading-relaxed">
+                Under the Consumer Protection (E-Commerce) Rules and statutory indirect tax frameworks (including Indian GST, UK VAT, and Singapore GST), credit notes will explicitly itemize the reversed base service fee alongside the corresponding indirect tax credit. Adjusted tax invoices are transmitted to your accounting department within 3 business days of refund authorization for statutory tax filings.
+              </p>
+</div>
+</div>
+<!-- Accordion Item 4 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200">
+<button class="faq-toggle w-full p-space-lg text-left flex items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary-container">What happens to source code and architectural IP if an enterprise project terminates early?</span>
+<span class="material-symbols-outlined text-steel-grey text-[24px] transform transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg pt-0 text-on-surface-variant font-body-md text-body-md">
+<p class="leading-relaxed">
+                All intellectual property, documentation, and Git branches completed and paid for up to the formal cancellation date transfer permanently to the client. Any uncompleted or in-progress exploratory code remains in repository escrow until reconciled under the final pro-rated settlement statement.
+              </p>
+</div>
+</div>
+<!-- Accordion Item 5 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden transition-all duration-200">
+<button class="faq-toggle w-full p-space-lg text-left flex items-center justify-between gap-space-md hover:bg-surface-container-low transition-colors" onclick="toggleFaq(this)">
+<span class="font-headline-sm text-headline-sm text-primary-container">What is the exact process if physical hardware arrives damaged or incomplete?</span>
+<span class="material-symbols-outlined text-steel-grey text-[24px] transform transition-transform duration-200 faq-icon">expand_more</span>
+</button>
+<div class="faq-content hidden px-space-lg pb-space-lg pt-0 text-on-surface-variant font-body-md text-body-md">
+<p class="leading-relaxed">
+                Fellows must record photographic evidence and report the shipment defect within 48 hours of transit delivery. KAGAI will immediately dispatch a priority replacement board at zero expense and provide a prepaid courier waybill to return the defective assembly.
+              </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 06: BILLING OPERATIONS ESCALATION DESK -->
+<section class="w-full bg-surface-container-lowest p-space-xl lg:p-space-2xl rounded-2xl shadow-sm flex flex-col lg:flex-row items-center justify-between gap-space-xl" id="billing-contact-panel">
+<div class="flex flex-col gap-space-sm max-w-2xl">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm font-semibold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Commercial Support &amp; Dispute Management</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary-container">Require Commercial Assistance with Your Account?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+            Our finance governance officers and commercial auditors are available to address billing inquiries, credit note reconciliation, enterprise invoicing, and cohort deferral applications.
+          </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs text-on-surface font-body-sm text-body-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">schedule</span>
+<span><strong>SLA Response:</strong> &lt; 4 Hours</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">verified</span>
+<span><strong>Direct Finance Line:</strong> +44 20 7946 0912</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-md shrink-0 w-full lg:w-auto">
+<a class="px-space-xl py-space-md rounded bg-primary-container text-on-primary font-body-md text-body-md font-semibold text-center hover:bg-primary transition-all shadow-md flex items-center justify-center gap-space-xs" href="mailto:billing@kagai.com?subject=Commercial%20Billing%20Inquiry%20Ref:%20KAGAI-FIN">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+<span>Email Billing Desk</span>
+</a>
+<a class="px-space-xl py-space-md rounded bg-surface-container text-on-surface font-body-md text-body-md font-medium text-center hover:bg-surface-container-high transition-colors flex items-center justify-center gap-space-xs" data-path="auth" href="#">
+<span class="material-symbols-outlined text-[20px]">login</span>
+<span>Client Billing Portal</span>
+</a>
+</div>
+</section>
+<!-- Legal Disclaimer & Regulatory Footnote -->
+<section class="w-full text-center py-space-sm">
+<p class="font-label-sm text-label-sm text-steel-grey max-w-4xl mx-auto leading-relaxed">
+          KAGAI Innovation Technology Ltd. is incorporated in England and Wales (Company No. 14920194) with registered international subsidiaries. This policy is governed under and construed in accordance with the Laws of England and Wales and relevant local consumer protection jurisdictions. Questions regarding contractual dispute arbitration should be directed to <span class="font-mono text-on-surface font-medium">governance@kagai.com</span>.
+        </p>
+</section>
+</div>
+</main>
+</div>
+<!-- Inline Interactive Script for FAQ Accordions -->
+<script>
+  function toggleFaq(button) {
+    const content = button.nextElementSibling;
+    const icon = button.querySelector('.faq-icon');
+    const isExpanded = !content.classList.contains('hidden');
+
+    // Close all other accordions for sleek editorial flow
+    document.querySelectorAll('.faq-content').forEach(item => {
+      if (item !== content) {
+        item.classList.add('hidden');
+        if (item.previousElementSibling) {
+          const otherIcon = item.previousElementSibling.querySelector('.faq-icon');
+          if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+        }
+      }
+    });
+
+    // Toggle current
+    if (isExpanded) {
+      content.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    } else {
+      content.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface shadow-[0_-1px_8px_rgba(8,24,72,0.03)]"><div class="w-full px-margin-sm lg:px-margin-lg pt-space-2xl pb-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-2xl"><div class="lg:col-span-5 flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><img alt="Logo3.jpeg" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDPE_5BZsLKOQ8iztW-2mYiB8R60lEsfjQ2KKGkK5-Fqg_bGumyq1lQw2wEPHhDUOdKHSoZX6RR8-0sCkJmhYCXZEfVvJn5KonzmQ0S2RSPDblIlCJpR-QxJZaxYrcvy2pYOKoDpjFFkVw_7F23f7bTabc6L5UYOsLmZo14FXXiSEPe6agrtOlf5NmnJ3biZnL44ckILAeHmcJVUwIw7XxY4oMAPdrsV0V7Wo75bgDVjxrqg8vuCNperg"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm font-bold tracking-tight text-primary-container leading-none">KAGAI</span><span class="font-label-sm text-label-sm tracking-widest text-steel-grey uppercase">Innovation Technology</span></div></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Engineering high-integrity corporate software, IoT ecosystems, cybersecurity infrastructure, and applied digital education across global enterprises.</p><div class="flex flex-col gap-space-xs pt-space-xs"><span class="font-label-sm text-label-sm text-steel-grey uppercase tracking-wider">Registered Global Offices</span><p class="font-body-sm text-body-sm text-on-surface font-medium">London • Singapore • Nairobi • Bengaluru</p></div></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-semibold mb-space-xs">Company</h3><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="about-us" href="#">About KAGAI</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="leadership-governance" href="#">Leadership &amp; Governance</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="careers-fellowships" href="#">Careers &amp; Fellowships</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="insights" href="#">Research &amp; Insights</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="press-media" href="#">Press &amp; Media</a></li></ul></div><div class="lg:col-span-3 flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-semibold mb-space-xs">Services &amp; Solutions</h3><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="solutions" href="#">Enterprise Engineering</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="solutions" href="#">Cybersecurity Operations</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="solutions" href="#">Industrial IoT Architecture</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="solutions" href="#">Cloud Transformation</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="solutions" href="#">Technical Advisory</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-sm"><h3 class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider font-semibold mb-space-xs">Learning &amp; Legal</h3><ul class="flex flex-col gap-space-xs"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="academy" href="#">KAGAI Academy</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="auth" href="#">Student Portal</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="privacy-policy" href="#">Privacy Policy</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="terms-of-service" href="#">Terms of Service</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors"><a data-path="compliance-iso-27001" href="#">Compliance &amp; ISO 27001</a></li></ul></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><p class="font-body-sm text-body-sm text-steel-grey">© 2025 KAGAI Innovation Technology Ltd. All rights reserved.</p><div class="flex flex-wrap items-center gap-space-md font-body-sm text-body-sm text-steel-grey"><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy</a><span class="text-outline-variant">•</span><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms</a><span class="text-outline-variant">•</span><a class="hover:text-on-surface transition-colors" data-path="compliance-iso-27001" href="#">ISO Certification</a><span class="text-outline-variant">•</span><a class="hover:text-on-surface transition-colors" data-path="cookie-settings" href="#">Cookie Settings</a></div></div></div></footer></body></html>
