@@ -14,15 +14,36 @@ async function start() {
     // Connect to MongoDB before accepting requests.
     await connectDatabase();
 
-    server = app.listen(env.PORT, () => {
+    // Use the platform-assigned port on Render,
+    // or the local default port during development.
+    const PORT = env.PORT || 5000;
+    const HOST = '0.0.0.0';
+
+    server = app.listen(PORT, HOST, () => {
+      const isProduction = env.NODE_ENV === 'production';
       console.log('KAGAI INNOVATION TECHNOLOGY');
       console.log('Backend API Started Successfully');
-      console.log(`API: http://localhost:${env.PORT}`);
-      console.log(`Database: ${env.MONGODB_MODE}`);
-      console.log(`Database name: ${process.env.MONGODB_MODE === 'atlas'
-        ? 'MongoDB Atlas'
-        : 'Local MongoDB'}`);
+
+      console.log(`Environment: ${env.NODE_ENV}`);
+      console.log(`API Port: ${PORT}`);
+      console.log(`Database Mode: ${env.MONGODB_MODE}`);
+
+      console.log(
+        `Database: ${
+          env.MONGODB_MODE === 'atlas'
+            ? 'MongoDB Atlas'
+            : 'Local MongoDB'
+        }`
+      );
+      if (!isProduction) {
+        console.log(`Local API: http://localhost:${PORT}`);
+        console.log(`Health Check: http://localhost:${PORT}/api/health`);
+      } else {
+        console.log('Running on Render production environment');
+      }
+
     });
+
   } catch (error) {
     console.error('Unable to start KAGAI API:', error.message);
     process.exit(1);
@@ -50,6 +71,7 @@ async function shutdown(signal) {
 
     console.log('KAGAI API shutdown completed.');
     process.exit(0);
+
   } catch (error) {
     console.error('Shutdown error:', error.message);
     process.exit(1);
